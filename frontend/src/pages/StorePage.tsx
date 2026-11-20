@@ -5,6 +5,7 @@ import { ProductCard } from '../components/ProductCard'
 import { useLanguage } from '../context/LanguageContext'
 import { paginationItems } from '../pagination'
 import type { Filters, ProductListResponse } from '../types'
+import { sanitizePriceInput } from '../utils'
 
 const PER_PAGE = 20
 
@@ -193,22 +194,44 @@ export function StorePage() {
             <span>{t('common.price')}</span>
             <div className="price-range">
               <input
-                type="number"
-                min="0"
-                step="0.01"
+                type="text"
+                inputMode="decimal"
+                autoComplete="off"
+                pattern="[0-9]*[.]?[0-9]*"
                 value={minPrice}
                 placeholder={t('store.minPrice')}
                 aria-label={t('store.minPrice')}
-                onChange={(event) => setMinPrice(event.target.value)}
+                onKeyDown={(event) => {
+                  if (
+                    event.key.length === 1 &&
+                    !/[0-9.]/.test(event.key) &&
+                    !event.ctrlKey &&
+                    !event.metaKey
+                  ) {
+                    event.preventDefault()
+                  }
+                }}
+                onChange={(event) => setMinPrice(sanitizePriceInput(event.target.value))}
               />
               <input
-                type="number"
-                min="0"
-                step="0.01"
+                type="text"
+                inputMode="decimal"
+                autoComplete="off"
+                pattern="[0-9]*[.]?[0-9]*"
                 value={maxPrice}
                 placeholder={t('store.maxPrice')}
                 aria-label={t('store.maxPrice')}
-                onChange={(event) => setMaxPrice(event.target.value)}
+                onKeyDown={(event) => {
+                  if (
+                    event.key.length === 1 &&
+                    !/[0-9.]/.test(event.key) &&
+                    !event.ctrlKey &&
+                    !event.metaKey
+                  ) {
+                    event.preventDefault()
+                  }
+                }}
+                onChange={(event) => setMaxPrice(sanitizePriceInput(event.target.value))}
               />
             </div>
           </div>

@@ -90,7 +90,7 @@ You can also create a new account from the registration page.
 - Homepage sections show a single product row with a "Show all" action below.
 - 128 demo products and 416 seller offers after importing both seed files.
 - Product image fallback for tiny platform icons, so images fit their slots correctly.
-- Store catalog with platform, region, category, price filters, sorting, pagination with interactive first/last/current page numbers, and name search.
+- Store catalog with platform, region, category, numeric-only price filters, sorting, pagination with interactive first/last/current page numbers, and name search.
 - Typo-tolerant global search with partial-name matching.
 - Diacritic folding: `s` and `š` are treated as the same letter, along with other Lithuanian and common Latin accents.
 - Levenshtein typo threshold of 2 for tokens of 5+ characters; shorter tokens use a threshold of 1 to avoid noisy matches.
@@ -115,7 +115,7 @@ See `docs/SECURITY_AUDIT.md` for the full audit report and test evidence.
 - Use HTTPS in production, set `SESSION_SECURE=true`, and set `SESSION_SAMESITE=None` when the frontend and API are on different sites.
 - Update the CSP `connect-src` value in `frontend/public/.htaccess` / `frontend/public/_headers` if the deployed API origin is not served through the same origin or localhost.
 - `APP_ENV=production` hides internal errors. Set `APP_ENV=development` temporarily if you need verbose local debugging.
-- Do not deploy XAMPP or phpMyAdmin. Deploy only `backend/public` and `frontend/dist`.
+- Do not deploy XAMPP or phpMyAdmin. For alwaysdata, use `deploy/` (`www/` and `backend/`) or `homework-task_intus_marketplace_deploy.zip` (configured database password). The password-free template is `hosting/` and `homework-task_intus_marketplace_hosting.zip`.
 - Change the demo account password or remove the demo user before production.
 - Set a strong MySQL password before exposing the database beyond localhost.
 
@@ -154,7 +154,8 @@ Checkout is intentionally simulated:
 
 - no card number, CVV, bank account, or billing fields
 - the user must be signed in
-- the server validates the selected offers and stock
+- the server aggregates duplicate offer/product lines before enforcing the 10-unit-per-product limit
+- the server validates aggregated offer quantities against available stock
 - the server creates the order and assigns digital keys
 
 ## Useful API routes
@@ -177,6 +178,15 @@ POST   /api/checkout
 GET    /api/orders
 GET    /api/orders/{id}
 ```
+
+## Hosting bundle
+
+- Configured alwaysdata upload: `deploy/www/` + `deploy/backend/`
+- Configured zip: `homework-task_intus_marketplace_deploy.zip`
+- Password-free template: `hosting/`
+- Template zip: `homework-task_intus_marketplace_hosting.zip`
+
+The deploy bundle contains the current compiled frontend, PHP API, `.htaccess` routing, security headers, checkout aggregation fix, and numeric-only price inputs.
 
 ## Notes
 

@@ -49,6 +49,11 @@ export function useCartAvailability() {
   const stockIssue: CartItem | undefined = items.find(
     (item) => item.stock <= 0 || item.quantity > Math.min(10, item.stock),
   )
+  const productTotals = new Map<number, number>()
+  items.forEach((item) => {
+    productTotals.set(item.productId, (productTotals.get(item.productId) ?? 0) + item.quantity)
+  })
+  const productLimitIssue = Array.from(productTotals.values()).some((total) => total > 10)
 
-  return { checking, stockIssue }
+  return { checking, stockIssue, productLimitIssue }
 }

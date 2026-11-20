@@ -10,7 +10,7 @@ export function CartPage() {
   const { t, price } = useLanguage()
   const { user } = useAuth()
   const { items, total, updateQuantity, removeItem } = useCart()
-  const { checking, stockIssue } = useCartAvailability()
+  const { checking, stockIssue, productLimitIssue } = useCartAvailability()
   const navigate = useNavigate()
 
   if (items.length === 0) {
@@ -101,12 +101,13 @@ export function CartPage() {
           </div>
           {checking && <p className="muted cart-stock-note">{t('cart.stockChecking')}</p>}
           {stockIssue && <p className="form-error">{t('cart.stockIssue')}</p>}
+          {productLimitIssue && <p className="form-error">{t('cart.productLimitIssue')}</p>}
           <button
             type="button"
             className="btn btn-primary btn-block"
-            disabled={checking || Boolean(stockIssue)}
+            disabled={checking || Boolean(stockIssue) || productLimitIssue}
             onClick={() => {
-              if (checking || stockIssue) {
+              if (checking || stockIssue || productLimitIssue) {
                 return
               }
               if (user) {

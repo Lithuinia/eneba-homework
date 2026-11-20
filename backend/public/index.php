@@ -42,6 +42,15 @@ verify_csrf();
 $pdo = Database::connection($config['db']);
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+
+$scriptName = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? '');
+$basePath = rtrim(str_replace('\\', '/', dirname(dirname($scriptName))), '/');
+if ($basePath !== '' && $basePath !== '.' && strpos($path, $basePath) === 0) {
+    $path = substr($path, strlen($basePath));
+}
+if ($path === '') {
+    $path = '/';
+}
 $path = rtrim($path, '/');
 if ($path === '') {
     $path = '/';

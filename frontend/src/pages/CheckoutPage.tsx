@@ -21,7 +21,7 @@ const paymentMethods: Array<{ value: PaymentMethod; labelKey: string }> = [
 export function CheckoutPage() {
   const { t, price } = useLanguage()
   const { items, total, clear } = useCart()
-  const { checking, stockIssue } = useCartAvailability()
+  const { checking, stockIssue, productLimitIssue } = useCartAvailability()
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [order, setOrder] = useState<Order | null>(null)
@@ -257,16 +257,17 @@ export function CheckoutPage() {
           </div>
           {checking && <p className="muted cart-stock-note">{t('cart.stockChecking')}</p>}
           {stockIssue && <p className="form-error">{t('cart.stockIssue')}</p>}
+          {productLimitIssue && <p className="form-error">{t('cart.productLimitIssue')}</p>}
           <button
             type="button"
             className="btn btn-primary btn-block"
             onClick={() => {
-              if (checking || stockIssue) {
+              if (checking || stockIssue || productLimitIssue) {
                 return
               }
               void placeOrder()
             }}
-            disabled={busy || checking || Boolean(stockIssue)}
+            disabled={busy || checking || Boolean(stockIssue) || productLimitIssue}
           >
             {busy ? t('checkout.processing') : t('checkout.placeOrder')}
           </button>

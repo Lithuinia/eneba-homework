@@ -18,6 +18,8 @@ Scope: the Intus marketplace frontend and PHP API, tested over HTTP as an extern
 
 - Wishlist items are now deleted when a completed order contains the same product.
 - Checkout rejects missing, non-numeric, zero, negative, or greater-than-10 quantities instead of silently clamping them.
+- Checkout aggregates duplicate offer lines and product quantities before enforcing the 10-unit-per-product limit.
+- Checkout validates aggregated offer quantities against available stock, preventing line-splitting bypasses.
 - Checkout still calculates totals from server-side offer prices, so client-supplied prices are ignored.
 - Checkout rejects more than 20 cart line entries.
 - Duplicate registration races are handled by the unique email constraint and return a conflict response.

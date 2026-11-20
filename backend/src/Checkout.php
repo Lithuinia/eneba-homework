@@ -20,18 +20,7 @@ final class Checkout
         $pdo->beginTransaction();
 
         try {
-            $offerStatement = $pdo->prepare(
-                'SELECT o.id, o.product_id, o.seller_id, o.price, o.currency, o.stock,
-                    p.name AS product_name, s.name AS seller_name
-                 FROM offers o
-                 JOIN products p ON p.id = o.product_id
-                 JOIN sellers s ON s.id = o.seller_id
-                 WHERE o.id = ? AND p.is_active = 1 FOR UPDATE'
-            );
-
-            $total = 0.0;
-            $prepared = [];
-
+            $requestedByOffer = [];
             foreach ($items as $item) {
                 if (!is_array($item)) {
                     throw new CheckoutException('Invalid cart item');
@@ -46,24 +35,61 @@ final class Checkout
                 }
                 $offerId = (int) $rawOfferId;
                 $quantity = (int) $rawQuantity;
-                if ($quantity < 1 || $quantity > 10) {
-                    throw new CheckoutException('Quantity must be between 1 and 10');
-                }
-
                 if ($offerId <= 0) {
                     throw new CheckoutException('Invalid offer');
                 }
-
-                $offerStatement->execute([$offerId]);
-                $offer = $offerStatement->fetch();
-
-                if (!$offer) {
-                    throw new CheckoutException('One of the selected offers is no longer available');
+                if ($quantity < 1 || $quantity > 10) {
+                    throw new CheckoutException('Quantity must be between 1 and 10');
                 }
+                $requestedByOffer[$offerId] = ($requestedByOffer[$offerId] ?? 0) + $quantity;
+            }
+
+            if ($requestedByOffer === []) {
+                throw new CheckoutException('Cart is empty');
+            }
+
+            $offerIds = array_keys($requestedByOffer);
+            $placeholders = implode(',', array_fill(0, count($offerIds), '?'));
+            $offerStatement = $pdo->prepare(
+                'SELECT o.id, o.product_id, o.seller_id, o.price, o.currency, o.stock,
+                    p.name AS product_name, s.name AS seller_name
+                 FROM offers o
+                 JOIN products p ON p.id = o.product_id
+                 JOIN sellers s ON s.id = o.seller_id
+                 WHERE o.id IN (' . $placeholders . ') AND p.is_active = 1 FOR UPDATE'
+            );
+            $offerStatement->execute($offerIds);
+            $offers = [];
+            foreach ($offerStatement->fetchAll() as $offerRow) {
+                $offers[(int) $offerRow['id']] = $offerRow;
+            }
+
+            if (count($offers) !== count($offerIds)) {
+                throw new CheckoutException('One of the selected offers is no longer available');
+            }
+
+            $requestedByProduct = [];
+            foreach ($requestedByOffer as $offerId => $quantity) {
+                $productId = (int) $offers[$offerId]['product_id'];
+                $requestedByProduct[$productId] = ($requestedByProduct[$productId] ?? 0) + $quantity;
+            }
+            foreach ($requestedByProduct as $quantity) {
+                if ($quantity > 10) {
+                    throw new CheckoutException('Maximum 10 units per product');
+                }
+            }
+
+            foreach ($requestedByOffer as $offerId => $quantity) {
+                $offer = $offers[$offerId];
                 if ((int) $offer['stock'] < $quantity) {
                     throw new CheckoutException('Not enough stock for ' . $offer['product_name']);
                 }
+            }
 
+            $total = 0.0;
+            $prepared = [];
+            foreach ($requestedByOffer as $offerId => $quantity) {
+                $offer = $offers[$offerId];
                 $keyStatement = $pdo->prepare(
                     'SELECT id, key_code FROM product_keys
                      WHERE product_id = ? AND is_used = 0
@@ -103,6 +129,7 @@ final class Checkout
                 'DELETE FROM wishlist WHERE user_id = ? AND product_id = ?'
             );
 
+            $orderedProductIds = [];
             foreach ($prepared as $entry) {
                 $offer = $entry['offer'];
                 for ($index = 0; $index < $entry['quantity']; $index++) {
@@ -127,7 +154,11 @@ final class Checkout
                 }
 
                 $stockUpdate->execute([$entry['quantity'], (int) $offer['id']]);
-                $wishlistDelete->execute([$userId, (int) $offer['product_id']]);
+                $orderedProductIds[(int) $offer['product_id']] = true;
+            }
+
+            foreach (array_keys($orderedProductIds) as $productId) {
+                $wishlistDelete->execute([$userId, $productId]);
             }
 
             $pdo->commit();

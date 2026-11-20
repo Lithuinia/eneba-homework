@@ -463,3 +463,350 @@ Implemented both.
    - The selected method appears in the order summary.
 
 Verified with Playwright and frontend typecheck/build. Servers remain running at `http://localhost:5173` and `http://127.0.0.1:8000`.
+
+---
+
+## Turn 7
+
+### User
+
+stop all current processes, i need you to make the project ready for hosting.
+1. make the files use: "homework-task_intus_marketplace" name for database
+2. run "npm run build" to ready dist and build folders
+3. ready the backend files
+
+### Assistant
+
+Stopped all project server processes and prepared the project for hosting.
+
+- Renamed the database target to `homework-task_intus_marketplace` in SQL files, backend configuration, README, and hosting docs.
+- Added `HOSTING.md` and `backend/.env.production.example`.
+- Updated the build script to generate both `frontend/dist` and a compatible `frontend/build` copy.
+- Ran `npm run build` successfully.
+- Ran PHP lint and SQL checks.
+- Confirmed all test processes were stopped.
+
+### Final assistant response
+
+Stopped all current processes and prepared the project for hosting.
+
+1. Database name updated to `homework-task_intus_marketplace` in SQL files, backend `.env`, `.env.example`, defaults, README, and hosting docs. SQL identifiers are backticked because the name contains hyphens.
+2. `npm run build` completed. `frontend/dist` and `frontend/build` are ready.
+3. Backend production environment example and hosting instructions were added. PHP lint passes.
+
+---
+
+## Turn 8
+
+### User
+
+could you be able to create a folder that i can send to a website hosting and connect it there?
+db user: homework-task
+db pass: just say where to change it
+and also configure .htacces files correctly that they link information correctly
+the websites url: https://homework-task.alwaysdata.net/
+in .env db link is: https://homework-task.alwaysdata.net/
+the database is already configured to this project, only need to link code to it
+if anything is unclear ask questions
+
+### Assistant
+
+Created a self-contained alwaysdata hosting bundle.
+
+- Created `hosting/` with the built frontend at `/`, API at `/api`, and PHP source in `app/`.
+- Added root, API, and app `.htaccess` files for routing, SPA fallback, security headers, and private-path blocking.
+- Configured `hosting/app/.env` with alwaysdata DB host, database name, DB user, site URL, and secure session settings.
+- Left `DB_PASS=CHANGE_ME` and documented the exact location.
+- Made API routing work at the domain root and in a subdirectory.
+- Tested with local Apache: frontend, SPA route, API health/search/home, and protected paths.
+- Created `homework-task_intus_marketplace_hosting.zip` with POSIX paths.
+- Verified DNS and MySQL port reachability for alwaysdata.
+- Stopped all test processes.
+
+### Final assistant response
+
+Created the upload bundle.
+
+- Folder: `hosting/`
+- Zip: `homework-task_intus_marketplace_hosting.zip`
+
+Database configuration is in `hosting/app/.env`. Change only:
+
+```text
+DB_PASS=CHANGE_ME
+```
+
+The database host is `mysql-homework-task.alwaysdata.net`. The website URL is `FRONTEND_ORIGIN=https://homework-task.alwaysdata.net`.
+
+Upload the contents of `hosting/` (or extract the zip) into the alwaysdata site root and keep the site type as PHP. Ensure hidden files such as `.htaccess`, `app/.env`, and `app/.htaccess` are preserved.
+
+Routing: `/api/*` goes to `api/index.php`, SPA routes fall back to `index.html`, and private app files are blocked.
+
+---
+
+## Turn 9
+
+### User
+
+there is a problem of in price boxes user can input letters, fix the problem where for numbers, only numbers can be written, fix the problem in local version and in deployment version
+
+### Assistant
+
+Fixed the price filter inputs in the source and deployment build.
+
+- Changed min/max price inputs from `type="number"` to text inputs with `inputMode="decimal"`.
+- Added keydown blocking and input sanitization so only digits and one decimal separator are accepted.
+- Limited prices to two decimal places and removed letters, minus signs, and scientific notation.
+- Rebuilt `dist` and `build`.
+- Updated `hosting/` with the new hashed JS asset and rebuilt the hosting zip.
+- Verified in Playwright against the built deployment bundle:
+  - `abc12.345xyz` becomes `12.34`
+  - typing `a1b2.3c4` produces `12.34`
+  - `9x8.7y6` becomes `98.76`
+- Restored API subdirectory routing in the hosting bundle and re-tested API endpoints under local Apache.
+- Stopped all test servers.
+
+### Final assistant response
+
+Fixed the price boxes in both the local source and the deployment bundle.
+
+- Only digits and one decimal separator are accepted.
+- Letters, minus signs, and scientific notation are blocked.
+- Values are limited to two decimal places.
+- Rebuilt `frontend/dist`, `frontend/build`, `hosting/`, and `homework-task_intus_marketplace_hosting.zip`.
+- Verified against the built deployment bundle: typing or pasting letters no longer changes the numeric value.
+- Re-tested the hosting API routing and protected paths under local Apache.
+- All test server processes are stopped.
+
+---
+
+## Turn 10
+
+### User
+
+there is a way to counter the limit of 10 info found:
+The checkout enforces “quantity must be between 1 and 10” — but per line item, not per product. Send the same offer_id as two separate lines and the caps stack:
+json
+
+POST /api/checkout
+{ "items": [
+  {"offer_id":21,"quantity":10},
+  {"offer_id":21,"quantity":1} ] }
+→ 201 Created, order with 11 keys
+
+I got 11 units of a product capped at 10. With more lines it’s unbounded (10 lines × 10 = 100), limited only by stock. In a real store this is overselling / inventory-limit bypass / per-customer-limit and promo abuse.
+
+Fix: aggregate quantities by offer_id (or product_id) before applying the ≤10 check, and validate against available stock on the server.
+
+### Assistant
+
+Fixed the checkout line-splitting bypass.
+
+- Checkout now validates and aggregates quantities by `offer_id` before stock checks.
+- Quantities are aggregated by `product_id` before enforcing the 10-unit-per-product limit.
+- Stock validation now uses the aggregated offer quantity, not individual lines.
+- The frontend cart/checkout also blocks checkout when the same product total exceeds 10.
+- Tested:
+  - same offer `10 + 1` → 422 `Maximum 10 units per product`
+  - same product across two offers `6 + 5` → 422
+  - low-stock offer `4 + 3` with stock 6 → 422 `Not enough stock`
+  - valid same offer `5 + 5` → accepted with exactly 10 order items
+- Copied the fixed checkout handler into the hosting bundle and rebuilt the frontend assets and hosting zip.
+- Cleaned up the test order/user and restored stock.
+- Stopped all test servers.
+
+### Final assistant response
+
+Fixed the line-splitting bypass.
+
+- Checkout now aggregates duplicate lines by `offer_id` before stock validation.
+- It also aggregates by `product_id` before applying the 10-unit limit, so sending the same product through different offers cannot bypass the cap.
+- Stock is checked against the aggregated offer quantity.
+- The cart/checkout UI now also blocks checkout when one product totals more than 10.
+
+Verified server responses:
+
+- `10 + 1` on the same offer → `422 Maximum 10 units per product`
+- `6 + 5` across two offers for the same product → `422`
+- `4 + 3` against stock 6 → `422 Not enough stock`
+- `5 + 5` on the same offer → accepted with exactly 10 order items
+
+Updated the hosting bundle and zip with the fixed checkout handler and rebuilt frontend assets. All test processes are stopped.
+
+---
+
+## Turn 11
+
+### User
+
+can you configure the deploy file again with the changes and compiled frontend?
+
+### Assistant
+
+Rebuilt `deploy/alwaysdata` from the current `hosting/` bundle and preserved the configured database password from the existing deploy environment.
+
+- Deployed the latest compiled frontend asset `assets/index-Bj7OpTsT.js`.
+- Included the checkout aggregation fix and numeric-only price inputs.
+- Preserved API subdirectory routing.
+- Verified all 82 files match the current hosting bundle except the configured `app/.env` password.
+- Created `deploy/homework-task_intus_marketplace_deploy.zip`.
+- Linted the deploy PHP files.
+- Updated `README.md` and recreated `HOSTING.md`.
+- Confirmed no server processes are running.
+
+### Final assistant response
+
+Rebuilt and configured the deploy bundle.
+
+- Folder: `deploy/alwaysdata/`
+- Zip: `deploy/homework-task_intus_marketplace_deploy.zip`
+
+Included:
+
+- Current compiled frontend: `assets/index-Bj7OpTsT.js`
+- Checkout aggregation fix
+- Numeric-only price inputs
+- API routing and subdirectory support
+- `.htaccess` routing and protected paths
+- Configured database password in `app/.env` (preserved from the existing deploy environment, not printed)
+
+Verified all 82 deploy files match the hosting bundle except for the configured `app/.env`. PHP lint passes for all deploy PHP files. No server processes are running. Upload the contents of `deploy/alwaysdata/` (or extract the deploy zip) to the alwaysdata site root as a PHP site.
+
+---
+
+## Turn 12
+
+### User
+
+can you configure the deploy file again with the changes and compiled frontend? and make only have www and backend folder
+
+### Assistant
+
+Rebuilt `deploy/` with exactly two folders: `www/` and `backend/`.
+
+- `www/` contains the current compiled frontend, images, `logo.svg`, root `.htaccess`, `api/index.php`, and `api/.htaccess`.
+- `backend/` contains the current PHP source, `config/config.php`, `.env`, `.env.example`, `.htaccess`, and deployment notes.
+- Preserved the configured database password in `backend/.env` without printing it.
+- `www/api/index.php` loads `../../backend/src/Bootstrap.php`.
+- Rebuilt `homework-task_intus_marketplace_deploy.zip` with `www/` and `backend/` at the archive root.
+- Tested under local Apache: frontend, SPA route, API health/search/home, and blocked backend/source paths.
+- Stopped all test servers.
+
+### Final assistant response
+
+Reconfigured `deploy/` with exactly:
+
+```text
+deploy/
+  www/
+  backend/
+```
+
+Included:
+
+- Current compiled frontend: `assets/index-Bj7OpTsT.js`
+- Checkout aggregation fix
+- Numeric-only price inputs
+- API routing/SPA fallback/security headers
+- Configured DB password in `backend/.env` (preserved, not printed)
+- `backend/.htaccess` blocking direct backend access
+
+Zip ready at project root:
+
+```text
+homework-task_intus_marketplace_deploy.zip
+```
+
+Upload layout:
+
+- `www/` contents → `~/www`
+- `backend/` folder → `~/backend`
+
+Verified under local Apache:
+
+- `/www/` → 200
+- `/www/store` → 200
+- `/www/api/health` → 200
+- `/www/api/search` → 200
+- `/www/api/home` → 200
+- `/backend/.env` → 403
+- `/backend/src/...` → 403
+- `/www/.env` → 403
+
+All test server processes are stopped. Ensure hidden files (`.htaccess`, `backend/.env`) are preserved during upload.
+
+---
+
+## Turn 13
+
+### User
+
+when uploaded the new backend/ and www/ folders the website throws:
+Layout was forced before the page was fully loaded. If stylesheets are not yet loaded this may cause a flash of unstyled content. node.js:416:1
+XHR 
+GET
+https://homework-task.alwaysdata.net/api/filters
+[HTTP/2 500  70ms]
+XHR 
+GET
+https://homework-task.alwaysdata.net/api/auth/me
+[HTTP/2 500  233ms]
+XHR 
+GET
+https://homework-task.alwaysdata.net/api/products?sort=popular&page=1&per_page=20
+[HTTP/2 500  121ms]
+XHR 
+GET
+https://homework-task.alwaysdata.net/api/products?sort=price_asc&page=1&per_page=20
+[HTTP/2 500  69ms]
+...
+
+### Assistant
+
+Diagnosed the hosted 500s.
+
+Root cause: `deploy/backend/.env` had a UTF-8 BOM at the start of the file. The `.env` parser therefore did not recognize the first `DB_HOST=...` line, so `DB_HOST` fell back to `127.0.0.1`, which fails on alwaysdata.
+
+Fixes:
+
+- Removed the BOM from `deploy/backend/.env`.
+- Made `backend/config/config.php` strip a leading BOM from each `.env` line.
+- Copied the BOM-tolerant config into both `deploy/backend/config/config.php` and `hosting/app/config/config.php`.
+- Rebuilt the deploy and hosting zips.
+- Verified the remote database directly: tables and 128 products are present.
+- Verified against the real alwaysdata database via PHP CLI: filters, products, and home queries all succeed; unauthenticated auth/me returns null.
+- Updated `HOSTING.md` with a troubleshooting note for UTF-8 BOM and 500 errors.
+- No server processes are running.
+
+### Final assistant response
+
+Found and fixed the cause.
+
+`deploy/backend/.env` had a UTF-8 BOM on its first line, so `DB_HOST` was not parsed and PHP fell back to `127.0.0.1`, causing the 500s on every database-backed endpoint.
+
+Fixed:
+
+- Removed the BOM from `deploy/backend/.env`.
+- Made `config.php` strip a leading BOM.
+- Copied the fixed config into `deploy/backend/config/config.php`.
+- Rebuilt `homework-task_intus_marketplace_deploy.zip`.
+
+Re-upload these files to the host:
+
+```text
+deploy/backend/.env
+deploy/backend/config/config.php
+```
+
+Or re-upload the full `deploy/backend/` folder / zip.
+
+Verified against the real alwaysdata database:
+
+- tables exist
+- 128 products found
+- filters query works
+- products query works
+- home query works
+- unauthenticated auth/me returns null
+
+The “Layout was forced before the page was fully loaded” message is a browser warning, not the cause of the 500s. No test server processes are running.
