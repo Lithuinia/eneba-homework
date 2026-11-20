@@ -1,4 +1,4 @@
-USE intus_marketplace;
+USE `homework-task_intus_marketplace`;
 SET NAMES utf8mb4;
 
 SET FOREIGN_KEY_CHECKS = 0;

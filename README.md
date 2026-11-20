@@ -1,6 +1,6 @@
 # Intus Marketplace
 
-An Intus-style marketplace built for the Intus internship assignment.
+An Intus-style marketplace built for the Eneba internship assignment.
 
 ## Stack
 
@@ -27,8 +27,11 @@ database/
   seed.sql                 Example catalog, sellers, offers, keys, reviews, homepage blocks
   seed_extra.sql           Additional catalog records layered on top of seed.sql
 docs/                      Assignment analysis, style guide, feature inventory, task list
+HOSTING.md                 Hosting and deployment checklist
 CONVERSATION_LOG.md        Full agent conversation log
 ```
+
+The frontend build creates `frontend/dist` and an identical `frontend/build` compatibility copy.
 
 ## Prerequisites
 
@@ -42,7 +45,7 @@ CONVERSATION_LOG.md        Full agent conversation log
 2. Open phpMyAdmin and import `database/schema.sql`.
 3. Import `database/seed.sql`.
 4. Import `database/seed_extra.sql`. This adds the expanded catalog on top of the base seed.
-5. Copy `backend/.env.example` to `backend/.env` if you need custom database credentials. The default values target XAMPP: host `127.0.0.1`, user `root`, empty password, database `intus_marketplace`.
+5. Copy `backend/.env.example` to `backend/.env` if you need custom database credentials. The default values target XAMPP: host `127.0.0.1`, user `root`, empty password, database `homework-task_intus_marketplace`. For hosting, use `backend/.env.production.example`.
 6. Install frontend dependencies:
 
 ```powershell
@@ -72,6 +75,8 @@ npm run dev
 9. Open `http://localhost:5173`.
 
 For Apache/XAMPP, point a virtual host or copy `backend/public` into `htdocs`, enable `mod_rewrite`, and keep the `.htaccess` file. The API base URL can be changed with `VITE_API_BASE` in `frontend/.env`.
+
+For hosting instructions, see `HOSTING.md`. The ready-to-upload alwaysdata bundle is in `hosting/` and `homework-task_intus_marketplace_hosting.zip`.
 
 When deploying the frontend and backend on different domains, set `SESSION_SECURE=true` and `SESSION_SAMESITE=None` in `backend/.env`, use HTTPS, and add the deployed frontend URL to `FRONTEND_ORIGIN`.
 
@@ -115,7 +120,7 @@ See `docs/SECURITY_AUDIT.md` for the full audit report and test evidence.
 - Use HTTPS in production, set `SESSION_SECURE=true`, and set `SESSION_SAMESITE=None` when the frontend and API are on different sites.
 - Update the CSP `connect-src` value in `frontend/public/.htaccess` / `frontend/public/_headers` if the deployed API origin is not served through the same origin or localhost.
 - `APP_ENV=production` hides internal errors. Set `APP_ENV=development` temporarily if you need verbose local debugging.
-- Do not deploy XAMPP or phpMyAdmin. Deploy only `backend/public` and `frontend/dist`.
+- Do not deploy XAMPP or phpMyAdmin. Deploy only `backend/public` and `frontend/dist` (or the compatible `frontend/build` copy).
 - Change the demo account password or remove the demo user before production.
 - Set a strong MySQL password before exposing the database beyond localhost.
 
@@ -180,7 +185,7 @@ GET    /api/orders/{id}
 
 ## Notes
 
-- Frontend dependencies were installed and both `npm run typecheck` and `npm run build` completed successfully.
+- Frontend dependencies were installed and both `npm run typecheck` and `npm run build` completed successfully. The build generates `dist` and `build`.
 - `npm audit` reports 0 vulnerabilities.
 - The API was smoke-tested against XAMPP MariaDB 10.4: health, home, products, typo search, product detail, login, checkout, order history, and logout.
 - The black-box security audit passed 42/42 checks; see `docs/SECURITY_AUDIT.md`.

@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS intus_marketplace
+CREATE DATABASE IF NOT EXISTS `homework-task_intus_marketplace`
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-USE intus_marketplace;
+USE `homework-task_intus_marketplace`;
 
 SET NAMES utf8mb4;
 

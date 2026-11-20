@@ -1,4 +1,4 @@
-USE intus_marketplace;
+USE `homework-task_intus_marketplace`;
 SET NAMES utf8mb4;
 
 INSERT IGNORE INTO products (slug, name, description, platform, region, category, image_url, release_date, rating, rating_count, popularity) VALUES

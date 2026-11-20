@@ -139,7 +139,7 @@ Implemented all ten changes.
 5. Rebranded the application from Eneba to Intus:
    - new Intus wordmark logo in `frontend/public/logo.svg`
    - updated frontend text, footer, titles, demo email, package name
-   - database renamed to `intus_marketplace`
+   - database renamed to `homework-task_intus_marketplace`
    - session name changed to `intus_session`
    - localStorage keys changed to `intus_*`
    - app documentation renamed to Intus
@@ -173,7 +173,7 @@ Implemented all 10 changes.
 2. Removed the top app promotion banner.
 3. Removed the login/register marketing lists and illustration blocks.
 4. The header cart now uses `frontend/public/images/cart-removebg-preview.png`.
-5. Rebranded the application to Intus: logo, UI text, package name, database `intus_marketplace`, session name, and localStorage keys. The provided PDF, examples, historical chat log, and reference analysis keep their original naming for provenance.
+5. Rebranded the application to Intus: logo, UI text, package name, database `homework-task_intus_marketplace`, session name, and localStorage keys. The provided PDF, examples, historical chat log, and reference analysis keep their original naming for provenance.
 6. Added cross-tab logout synchronization through a shared browser storage event.
 7. Tiny platform icons are filtered out and a runtime artwork fallback is used, so the DOOM page no longer shows a giant Steam icon.
 8. Removed the duplicate category strip from the bottom of the homepage.
@@ -463,3 +463,139 @@ Implemented both.
    - The selected method appears in the order summary.
 
 Verified with Playwright and frontend typecheck/build. Servers remain running at `http://localhost:5173` and `http://127.0.0.1:8000`.
+
+---
+
+## Turn 7
+
+### User
+
+stop all current processes, i need you to make the project ready for hosting.
+1. make the files use: "homework-task_intus_marketplace" name for database
+2. run "npm run build" to ready dist and build folders
+3. ready the backend files
+
+### Assistant
+
+Stopped all project server processes and prepared the project for hosting.
+
+- Stopped Vite, PHP, and XAMPP control; confirmed no remaining PHP, Node, MySQL, Apache, MariaDB, or XAMPP processes.
+- Updated the database name to `homework-task_intus_marketplace` in SQL files, backend environment configuration, backend defaults, README, and hosting docs.
+- Added `HOSTING.md` with frontend, backend, database, Apache/Nginx, environment, and smoke-test instructions.
+- Added `backend/.env.production.example` for hosting configuration.
+- Updated the frontend build command to generate both `frontend/dist` and an identical `frontend/build` compatibility copy.
+- Ran `npm run build` successfully.
+- Ran PHP lint and SQL parsing checks.
+
+### Final assistant response
+
+Stopped all current processes and prepared the project for hosting.
+
+1. Database name:
+   - Updated SQL files, backend `.env`, `.env.example`, backend config defaults, README, and hosting docs to `homework-task_intus_marketplace`.
+   - SQL uses backticked identifiers because the name contains hyphens.
+   - Canonical imports: `schema.sql` → `seed.sql` → `seed_extra.sql`.
+   - Pre-created-database alternatives: `changed_name_initiation.sql` → `changed_name_seed.sql` → `changed_name_seed_extra.sql`.
+
+2. Frontend build:
+   - Ran `npm run build` successfully.
+   - `frontend/dist` is ready.
+   - `frontend/build` is an identical compatibility copy.
+   - Both contain 68 files.
+
+3. Backend:
+   - Added `backend/.env.production.example` with production DB, session, CORS, and HTTPS settings.
+   - Backend config defaults to the new database name.
+   - PHP lint passes for all backend files.
+   - Added `HOSTING.md` with upload, environment, database import, Apache/Nginx, and post-deploy checks.
+
+All server processes are stopped.
+
+---
+
+## Turn 8
+
+### User
+
+could you be able to create a folder that i can send to a website hosting and connect it there?
+db user: homework-task
+db pass: just say where to change it
+and also configure .htacces files correctly that they link information correctly
+the websites url: https://homework-task.alwaysdata.net/
+in .env db link is: https://homework-task.alwaysdata.net/
+the database is already configured to this project, only need to link code to it
+if anything is unclear ask questions
+
+### Assistant
+
+Created a self-contained alwaysdata upload bundle with combined frontend, API, database configuration, and routing.
+
+- Created `hosting/` with the built frontend at the root and the PHP API under `/api`.
+- Moved PHP source and configuration into `hosting/app` so it is not directly web-accessible.
+- Added root `.htaccess` for `/api` rewriting, SPA fallback, private path blocking, request limits, and security headers.
+- Added `hosting/api/.htaccess` and `hosting/app/.htaccess`.
+- Configured `hosting/app/.env` with:
+  - DB host `mysql-homework-task.alwaysdata.net`
+  - DB user `homework-task`
+  - DB name `homework-task_intus_marketplace`
+  - site URL `https://homework-task.alwaysdata.net`
+  - secure HTTPS session settings
+- Left `DB_PASS=CHANGE_ME` and documented the exact file/line to edit.
+- Made the API entry point robust when deployed in a subdirectory.
+- Tested the bundle under local Apache: frontend, SPA routing, API health/search/home, and blocked source paths.
+- Created `homework-task_intus_marketplace_hosting.zip` with POSIX archive paths.
+- Verified DNS for `mysql-homework-task.alwaysdata.net` and the site URL, and verified MySQL port 3306 reachability.
+- Stopped all test servers after verification.
+
+### Final assistant response
+
+Created the upload bundle.
+
+- Folder: `hosting/`
+- Zip: `homework-task_intus_marketplace_hosting.zip`
+
+Upload the contents of the folder (or extract the zip) into the alwaysdata site root, keeping the site type as PHP.
+
+Database values are already set in `hosting/app/.env`:
+
+```text
+DB_HOST=mysql-homework-task.alwaysdata.net
+DB_PORT=3306
+DB_NAME=homework-task_intus_marketplace
+DB_USER=homework-task
+DB_PASS=CHANGE_ME
+APP_ENV=production
+SESSION_NAME=intus_session
+FRONTEND_ORIGIN=https://homework-task.alwaysdata.net
+SESSION_SECURE=true
+SESSION_SAMESITE=Lax
+```
+
+Change only this line:
+
+```text
+hosting/app/.env → DB_PASS=CHANGE_ME
+```
+
+`FRONTEND_ORIGIN` is the site URL. The database host is `mysql-homework-task.alwaysdata.net`, not the website URL.
+
+Routing/configuration:
+
+- `/api/*` → `api/index.php`
+- `/` and SPA routes → `index.html`
+- `app/`, `.env`, source files, and deployment notes are blocked from HTTP access
+- Security headers and request limits are in the root `.htaccess`
+- The API works both at the domain root and in a subdirectory
+
+Verified locally with Apache:
+
+- frontend root: 200
+- SPA route `/store`: 200
+- `/api/health`: 200
+- `/api/search`: 200
+- `/api/home`: 200
+- `/app/.env`, `/app/src/*`, `/.env`, and deployment notes: 403
+
+Also verified `mysql-homework-task.alwaysdata.net` DNS and port 3306 reachability. All test server processes are stopped.
+
+Important: make sure your upload method preserves hidden files such as `.htaccess`, `app/.env`, and `app/.htaccess`. If the database is empty, import `database/schema.sql`, `database/seed.sql`, and `database/seed_extra.sql` into `homework-task_intus_marketplace`.

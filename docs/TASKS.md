@@ -114,3 +114,15 @@
 - [x] Add demo-only payment detail fields for each method without validation, processing, or storage.
 - [x] Show the selected payment method in the order summary.
 - [x] Verify pagination navigation and blank-field checkout in a headless browser.
+
+## Phase 9 - alwaysdata hosting bundle
+
+- [x] Rename the database target to `homework-task_intus_marketplace`.
+- [x] Create a combined `hosting/` folder with the built frontend and PHP API.
+- [x] Move API source into `hosting/app` and expose only `hosting/api/index.php`.
+- [x] Add root, API, and app `.htaccess` files for routing, SPA fallback, and private-path blocking.
+- [x] Add `hosting/app/.env` with alwaysdata database, session, and site URL values.
+- [x] Add `hosting/README_DEPLOY.txt` with the database password location.
+- [x] Create `homework-task_intus_marketplace_hosting.zip` with POSIX archive paths.
+- [x] Test API routing and protected paths under local Apache.
+- [x] Lint all hosting PHP files.

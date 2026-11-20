@@ -1,5 +1,6 @@
 node_modules/
 dist/
+build/
 .vite/
 *.tsbuildinfo
 backend/.env
@@ -8,3 +9,4 @@ frontend/.env
 XAMPP/
 .DS_Store
 Thumbs.db
+.env
