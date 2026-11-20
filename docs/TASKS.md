@@ -105,3 +105,12 @@
 - [x] Tighten two-typo matching to tokens of 5+ characters to reduce irrelevant results.
 - [x] Add `backend/tests/search_smoke.php` regression coverage.
 - [x] Verify search and cart limits in a headless browser.
+
+## Phase 8 - Pagination and checkout payment UI
+
+- [x] Replace the pagination summary span with interactive page-number buttons.
+- [x] Always include the first and last page, with a limited window around the current page and ellipses.
+- [x] Add selectable checkout payment methods: card, PayPal, Apple Pay, Google Pay, bank link, and crypto.
+- [x] Add demo-only payment detail fields for each method without validation, processing, or storage.
+- [x] Show the selected payment method in the order summary.
+- [x] Verify pagination navigation and blank-field checkout in a headless browser.

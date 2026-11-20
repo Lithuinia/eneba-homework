@@ -416,3 +416,50 @@ Replaced the cart quantity input with a read-only span. The plus/minus buttons r
 Changed the cart quantity control from a numeric input to a span showing the current number. The plus/minus buttons are now the only way to change the quantity, and the stock and 10-item limits still clamp correctly.
 
 Verified with Playwright: no quantity inputs remain, plus increases to the stock limit and disables, and minus decreases the displayed number. Frontend typecheck and build pass.
+
+---
+
+## Turn 6
+
+### User
+
+1. at the bottom of the page where are button that goes between pages the page number itself is in a span, can you make it that besides the button the numbers itself would be interactable example from the first page: Previuos 1 2 3 4 Next, also the first number should always be the first page and the last number should be the last page, but don't just write out all numbers there should be a limit of how many there should be and the current
+2. in the checkout page while there should be no real payments, atleast make it where you can select different payment options and input details for that payment option, but don't check if any entered information is correct or its blank.
+if anything is unclear ask before proceeding
+
+### Assistant
+
+Implemented both requests.
+
+Pagination:
+
+- Replaced the `current / total` span with interactive page-number buttons.
+- Added first/last page buttons and a limited window around the current page with ellipses.
+- Verified first page `Previous 1 2 3 4 … 7 Next`, page 2 activation, and last page `1 … 4 5 6 7`.
+
+Checkout:
+
+- Added six selectable payment methods: card, PayPal, Apple Pay, Google Pay, bank link, and crypto.
+- Added demo-only fields for each method.
+- No field is required, validated, processed, or stored.
+- The selected method appears in the order summary.
+- Verified checkout with completely blank card fields still completes.
+
+### Final assistant response
+
+Implemented both.
+
+1. Pagination:
+   - Replaced the page-number span with clickable page buttons.
+   - First and last pages are always present.
+   - A limited window around the current page is shown with ellipses.
+   - Verified page 1: `Previous 1 2 3 4 … 7 Next`, page clicks update the URL, and the active page is highlighted.
+
+2. Checkout payment UI:
+   - Added selectable payment options: Card, PayPal, Apple Pay, Google Pay, Bank link, Crypto.
+   - Added detail fields for each option.
+   - No validation is performed; blank details still allow the order to complete.
+   - Details are not sent, processed, or stored.
+   - The selected method appears in the order summary.
+
+Verified with Playwright and frontend typecheck/build. Servers remain running at `http://localhost:5173` and `http://127.0.0.1:8000`.

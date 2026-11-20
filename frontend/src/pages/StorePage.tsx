@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { api } from '../api'
 import { ProductCard } from '../components/ProductCard'
 import { useLanguage } from '../context/LanguageContext'
+import { paginationItems } from '../pagination'
 import type { Filters, ProductListResponse } from '../types'
 
 const PER_PAGE = 20
@@ -257,27 +258,45 @@ export function StorePage() {
                   <ProductCard key={product.id} product={product} />
                 ))}
               </div>
-              <div className="pagination">
-                <button
-                  type="button"
-                  className="btn btn-ghost btn-small"
-                  disabled={page <= 1}
-                  onClick={() => updateParam('page', String(page - 1))}
-                >
-                  {t('store.previous')}
-                </button>
-                <span>
-                  {page} / {pages}
-                </span>
-                <button
-                  type="button"
-                  className="btn btn-ghost btn-small"
-                  disabled={page >= pages}
-                  onClick={() => updateParam('page', String(page + 1))}
-                >
-                  {t('store.next')}
-                </button>
-              </div>
+              {pages > 1 && (
+                <div className="pagination">
+                  <button
+                    type="button"
+                    className="btn btn-ghost btn-small"
+                    disabled={page <= 1}
+                    onClick={() => updateParam('page', String(page - 1))}
+                  >
+                    {t('store.previous')}
+                  </button>
+                  <div className="pagination-pages">
+                    {paginationItems(page, pages).map((item, index) =>
+                      item === 'ellipsis' ? (
+                        <span className="pagination-ellipsis" key={`ellipsis-${index}`}>
+                          …
+                        </span>
+                      ) : (
+                        <button
+                          key={item}
+                          type="button"
+                          className={item === page ? 'page-button active' : 'page-button'}
+                          aria-current={item === page ? 'page' : undefined}
+                          onClick={() => updateParam('page', String(item))}
+                        >
+                          {item}
+                        </button>
+                      ),
+                    )}
+                  </div>
+                  <button
+                    type="button"
+                    className="btn btn-ghost btn-small"
+                    disabled={page >= pages}
+                    onClick={() => updateParam('page', String(page + 1))}
+                  >
+                    {t('store.next')}
+                  </button>
+                </div>
+              )}
             </>
           )}
         </section>

@@ -90,7 +90,7 @@ You can also create a new account from the registration page.
 - Homepage sections show a single product row with a "Show all" action below.
 - 128 demo products and 416 seller offers after importing both seed files.
 - Product image fallback for tiny platform icons, so images fit their slots correctly.
-- Store catalog with platform, region, category, price filters, sorting, pagination, and name search.
+- Store catalog with platform, region, category, price filters, sorting, pagination with interactive first/last/current page numbers, and name search.
 - Typo-tolerant global search with partial-name matching.
 - Diacritic folding: `s` and `š` are treated as the same letter, along with other Lithuanian and common Latin accents.
 - Levenshtein typo threshold of 2 for tokens of 5+ characters; shorter tokens use a threshold of 1 to avoid noisy matches.
@@ -99,7 +99,8 @@ You can also create a new account from the registration page.
 - Cross-tab logout synchronization through a shared browser storage event.
 - Cart with quantity controls and localStorage persistence.
 - Cart enforces a maximum of 10 units per item and clamps quantities to the current offer stock before checkout.
-- Simulated checkout with no bank fields; creates an order, assigns digital keys, decrements stock, and shows the keys.
+- Simulated checkout with selectable payment methods (card, PayPal, Apple Pay, Google Pay, bank link, crypto) and demo-only detail fields that are not validated, processed, or stored.
+- Checkout creates an order, assigns digital keys, decrements stock, and shows the keys.
 - Order history with purchased keys.
 - English/Lithuanian UI switch.
 - Responsive desktop and mobile layouts.

@@ -1043,11 +1043,54 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
   margin-top: 28px;
   color: var(--muted);
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 7px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.page-button:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.page-button.active {
+  border-color: var(--yellow);
+  background: var(--yellow);
+  color: #170a2e;
+}
+
+.pagination-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 32px;
+  color: var(--muted);
 }
 
 .store-footer-note {
@@ -1536,6 +1579,73 @@ h3 {
   font-size: 1.25rem;
 }
 
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: rgba(31, 10, 77, 0.48);
+}
+
+.payment-section h2 {
+  font-size: 1.8rem;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.12);
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.payment-option:hover {
+  border-color: var(--yellow);
+}
+
+.payment-option.selected {
+  border-color: var(--yellow);
+  background: rgba(250, 211, 24, 0.08);
+}
+
+.payment-option input {
+  accent-color: var(--yellow);
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.payment-fields .field.full {
+  grid-column: 1 / -1;
+}
+
+.payment-note {
+  font-size: 1.05rem;
+}
+
 .checkout-row {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr) auto;
@@ -1959,6 +2069,18 @@ code {
 
   .product-facts {
     grid-template-columns: 1fr;
+  }
+
+  .payment-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .payment-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
   }
 
   .auth-panel,

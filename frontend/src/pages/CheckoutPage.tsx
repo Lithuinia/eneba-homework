@@ -7,6 +7,17 @@ import { useLanguage } from '../context/LanguageContext'
 import { useCartAvailability } from '../hooks/useCartAvailability'
 import type { Order } from '../types'
 
+type PaymentMethod = 'card' | 'paypal' | 'apple_pay' | 'google_pay' | 'bank' | 'crypto'
+
+const paymentMethods: Array<{ value: PaymentMethod; labelKey: string }> = [
+  { value: 'card', labelKey: 'checkout.card' },
+  { value: 'paypal', labelKey: 'checkout.paypal' },
+  { value: 'apple_pay', labelKey: 'checkout.applePay' },
+  { value: 'google_pay', labelKey: 'checkout.googlePay' },
+  { value: 'bank', labelKey: 'checkout.bank' },
+  { value: 'crypto', labelKey: 'checkout.crypto' },
+]
+
 export function CheckoutPage() {
   const { t, price } = useLanguage()
   const { items, total, clear } = useCart()
@@ -14,6 +25,10 @@ export function CheckoutPage() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [order, setOrder] = useState<Order | null>(null)
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('card')
+  const selectedPaymentLabel = t(
+    paymentMethods.find((method) => method.value === paymentMethod)?.labelKey ?? 'checkout.card',
+  )
 
   if (order) {
     return (
@@ -102,12 +117,139 @@ export function CheckoutPage() {
             </article>
           ))}
           {error && <p className="form-error">{error}</p>}
+
+          <section className="payment-section">
+            <h2>{t('checkout.paymentMethod')}</h2>
+            <div className="payment-options">
+              {paymentMethods.map((method) => (
+                <label
+                  key={method.value}
+                  className={
+                    paymentMethod === method.value ? 'payment-option selected' : 'payment-option'
+                  }
+                >
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    value={method.value}
+                    checked={paymentMethod === method.value}
+                    onChange={() => setPaymentMethod(method.value)}
+                  />
+                  <span>{t(method.labelKey)}</span>
+                </label>
+              ))}
+            </div>
+
+            <div className="payment-details">
+              {paymentMethod === 'card' && (
+                <div className="payment-fields">
+                  <label className="field full">
+                    <span>{t('checkout.cardholder')}</span>
+                    <input type="text" name="cardholder" autoComplete="off" />
+                  </label>
+                  <label className="field full">
+                    <span>{t('checkout.cardNumber')}</span>
+                    <input
+                      type="text"
+                      name="card_number"
+                      inputMode="numeric"
+                      autoComplete="off"
+                      placeholder="0000 0000 0000 0000"
+                    />
+                  </label>
+                  <label className="field">
+                    <span>{t('checkout.expiry')}</span>
+                    <input type="text" name="card_expiry" autoComplete="off" placeholder="MM/YY" />
+                  </label>
+                  <label className="field">
+                    <span>{t('checkout.cvv')}</span>
+                    <input type="text" name="card_cvv" autoComplete="off" placeholder="123" />
+                  </label>
+                </div>
+              )}
+
+              {paymentMethod === 'paypal' && (
+                <div className="payment-fields">
+                  <label className="field full">
+                    <span>{t('checkout.paypalEmail')}</span>
+                    <input type="text" name="paypal_email" autoComplete="off" />
+                  </label>
+                </div>
+              )}
+
+              {paymentMethod === 'apple_pay' && (
+                <div className="payment-fields">
+                  <label className="field full">
+                    <span>{t('checkout.appleEmail')}</span>
+                    <input type="text" name="apple_email" autoComplete="off" />
+                  </label>
+                </div>
+              )}
+
+              {paymentMethod === 'google_pay' && (
+                <div className="payment-fields">
+                  <label className="field full">
+                    <span>{t('checkout.googleEmail')}</span>
+                    <input type="text" name="google_email" autoComplete="off" />
+                  </label>
+                </div>
+              )}
+
+              {paymentMethod === 'bank' && (
+                <div className="payment-fields">
+                  <label className="field">
+                    <span>{t('checkout.bankName')}</span>
+                    <select name="bank_name" defaultValue="">
+                      <option value="">—</option>
+                      <option value="swedbank">Swedbank</option>
+                      <option value="seb">SEB</option>
+                      <option value="luminor">Luminor</option>
+                      <option value="revolut">Revolut</option>
+                    </select>
+                  </label>
+                  <label className="field">
+                    <span>{t('checkout.accountHolder')}</span>
+                    <input type="text" name="account_holder" autoComplete="off" />
+                  </label>
+                  <label className="field full">
+                    <span>{t('checkout.iban')}</span>
+                    <input type="text" name="iban" autoComplete="off" placeholder="LT00 0000 0000 0000 0000" />
+                  </label>
+                </div>
+              )}
+
+              {paymentMethod === 'crypto' && (
+                <div className="payment-fields">
+                  <label className="field">
+                    <span>{t('checkout.network')}</span>
+                    <select name="crypto_network" defaultValue="">
+                      <option value="">—</option>
+                      <option value="bitcoin">Bitcoin</option>
+                      <option value="ethereum">Ethereum</option>
+                      <option value="solana">Solana</option>
+                      <option value="usdt">USDT</option>
+                    </select>
+                  </label>
+                  <label className="field full">
+                    <span>{t('checkout.walletAddress')}</span>
+                    <input type="text" name="wallet_address" autoComplete="off" />
+                  </label>
+                </div>
+              )}
+
+              <p className="muted payment-note">{t('checkout.demoFields')}</p>
+            </div>
+          </section>
         </section>
         <aside className="cart-summary">
           <h2>{t('checkout.orderSummary')}</h2>
           <div className="summary-row">
             <span>{t('cart.subtotal')}</span>
             <span>{price(total)}</span>
+          </div>
+          <div className="summary-row">
+            <span>{t('checkout.paymentMethod')}</span>
+            <span>{selectedPaymentLabel}</span>
           </div>
           <div className="summary-row summary-total">
             <span>{t('cart.total')}</span>
