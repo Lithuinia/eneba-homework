@@ -1,0 +1,25 @@
+.fse1J0{position:relative;padding-bottom:530px;margin-bottom:130px;margin-top:125px}
+
+@media(max-width: 1200px){
+.fse1J0{padding-bottom:calc(20px + 510*(100vw - 320px)/880);margin-top:calc(1px + 124*(100vw - 320px)/880);margin-bottom:calc(20px + 110*(100vw - 320px)/880)}}
+
+.wJyFm2{font-weight:800;font-size:6.1rem;line-height:1.3;margin-bottom:35px}
+
+@media(max-width: 1200px){
+.wJyFm2{font-size:calc(2.5rem + 3vw)}}
+
+.gKw6T_{display:block;font-weight:400;font-size:2.1rem;line-height:1.3;margin-bottom:55px}
+
+@media(max-width: 1200px){
+.gKw6T_{font-size:calc(1.7rem + 0.3333333333vw)}}
+
+.lCzaWL{display:inline-flex;min-width:220px}
+
+.ZSwMiY{position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:-1}
+
+[dir="rtl"] .ZSwMiY{left:auto;right:50%;transform:translateX(50%)}
+
+@media(max-width: 700px){
+.ZSwMiY{display:none}}
+
+.gQxG5z{background:url(https://static.eneba.games/600b5f7056eb545ead0c.png) center/cover no-repeat,#4618ac}

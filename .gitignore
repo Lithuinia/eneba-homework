@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+backend/.env
+frontend/.env
+.env.local
+XAMPP/
+.DS_Store
+Thumbs.db

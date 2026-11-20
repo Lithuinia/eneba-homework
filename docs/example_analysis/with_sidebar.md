@@ -1,0 +1,318 @@
+# Example page analysis: with_sidebar.html
+
+Source: `examples/with_sidebar.html`
+
+## Metadata
+- Title: Įsigyk žaidimus, dovanų korteles ir papildymus pigiau
+- Meta description: Eneba — greičiausiai auganti parduotuvė vaizdo žaidimų megėjams. Pirk PC, PlayStation, Xbox ir Nintendo žaidimus bei dovanų korteles pigiai ir saugiai - tik su Eneba!
+- Body text length: 226578
+
+## Headings
+- H2: Populiarūs papildymai
+- H2: Rekomenduojama tau
+- H2: Populiariausi žaidimai
+- H2: Populiariausios el. dovanų kortelės
+- H2: Populiariausi papildymai
+- H2: Įsigyk iš anksto
+- H2: Kategorijos
+
+## Visible buttons
+- Išvalyti paieškos tekstą
+- Uždaryti
+- LietuviųEUR
+- Mano pirkinių krepšelis
+- Vartotojo meniu
+- Meniu
+- Main GTA VI | A variant
+- MEGA GIVEAWAY | NOV 26
+- CHEAP GAMES | NOV 26
+- SOFTWARE | APR 2026
+- Rodyti ankstesnes kategorijas
+- Rodyti daugiau kategorijų
+- Pridėti į krepšelį - Grand Theft Auto VI (PS5) PSN Key EUROPE
+- Pridėti į krepšelį
+- Pridėti į norų sąrašą - Grand Theft Auto VI (PS5) PSN Key EUROPE
+- Pridėti į krepšelį - Grand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Pridėti į norų sąrašą - Grand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Pridėti į krepšelį - Grand Theft Auto VI (PS5) PSN Key UNITED KINGDOM
+- Pridėti į norų sąrašą - Grand Theft Auto VI (PS5) PSN Key UNITED KINGDOM
+- Pridėti į krepšelį - Grand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Pridėti į norų sąrašą - Grand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Pridėti į krepšelį - Grand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Grand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+- Pridėti į norų sąrašą - Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+- Pridėti į krepšelį - Minecraft: Java & Bedrock Edition (PC) Windows Store Key GLOBAL
+- Pridėti į norų sąrašą - Minecraft: Java & Bedrock Edition (PC) Windows Store Key GLOBAL
+- Pridėti į krepšelį - over the hill Steam Key (PC) EUROPE
+- Pridėti į norų sąrašą - over the hill Steam Key (PC) EUROPE
+- Pridėti į krepšelį - Grand Theft Auto VI + Pre-Order Bonus (DLC) (PS5) PSN Key EUROPE
+- Pridėti į norų sąrašą - Grand Theft Auto VI + Pre-Order Bonus (DLC) (PS5) PSN Key EUROPE
+- Pridėti į krepšelį - Grand Theft Auto VI (PS5) PSN Key UNITED STATES
+- Pridėti į norų sąrašą - Grand Theft Auto VI (PS5) PSN Key UNITED STATES
+- Pridėti į krepšelį - WARDOGS Steam Key (PC) GLOBAL
+- Pridėti į norų sąrašą - WARDOGS Steam Key (PC) GLOBAL
+- Pridėti į krepšelį - Farming Simulator 25 (PC) Steam Key GLOBAL
+- Pridėti į norų sąrašą - Farming Simulator 25 (PC) Steam Key GLOBAL
+- Pridėti į krepšelį - PEAK Steam Key (PC) GLOBAL
+- Pridėti į norų sąrašą - PEAK Steam Key (PC) GLOBAL
+- Pridėti į krepšelį - Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Pridėti į norų sąrašą - Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Pridėti į krepšelį - Assetto Corsa Steam key GLOBAL
+- Pridėti į norų sąrašą - Assetto Corsa Steam key GLOBAL
+- Įkelti daugiau
+- Prenumeruoti
+- Slapukų nustatymai
+- Platformos
+- Populiarūs žanrai
+- Nišiniai žanrai
+- Skin'ai ir rinkiniai
+- Ieškoti pagal kainą
+- PC papildymai
+- Konsolių dovanų kortelės
+- Papildymai pagal kainą
+- Populiarios El. Dovanų kortelės
+- PSN sąrašas
+- Xbox sąrašas
+- Prenumeratos
+- Žaidimai pagal kainą
+- Nintendo sąrašas
+- Progr. įranga
+
+## Visible links / navigation labels
+- Eneba
+- Norų sąrašas
+- Patogiausiam naršymui naudokis Eneba programėle !
+- Kategorijos
+- Pigūs žaidimai
+- Progr. įranga
+- E. kortelės
+- Eneba papildymai
+- Konkursas
+- TGA ’26
+- GTA 6
+- Main GTA VI | A variant
+- MEGA GIVEAWAY | NOV 26
+- CHEAP GAMES | NOV 26
+- SOFTWARE | APR 2026
+- Žaidimai
+- Žaid. Kortelės
+- eDovanų kortelės
+- E-money kortelės
+- Steam
+- Steam papildymai
+- PSN
+- Xbox
+- FIFA
+- Fortnite
+- Amazon
+- Apple
+- Mobilieji žaidimai
+- Spotify
+- Netflix
+- Nintendo
+- Papildiniai
+- Išankstiniai užsakymai
+- Grand Theft Auto VI (PS5) PSN Key EUROPE
+- Peržiūrėti pasiūlymus
+- Grand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Grand Theft Auto VI (PS5) PSN Key UNITED KINGDOM
+- Grand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Grand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBAL
+- Peržiūrėti viską
+- Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+- Minecraft: Java & Bedrock Edition (PC) Windows Store Key GLOBAL
+- over the hill Steam Key (PC) EUROPE
+- Grand Theft Auto VI + Pre-Order Bonus (DLC) (PS5) PSN Key EUROPE
+- Grand Theft Auto VI (PS5) PSN Key UNITED STATES
+- WARDOGS Steam Key (PC) GLOBAL
+- Farming Simulator 25 (PC) Steam Key GLOBAL
+- PEAK Steam Key (PC) GLOBAL
+- Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Assetto Corsa Steam key GLOBAL
+- Rodyti viską
+- Razer
+- iTunes
+- Tinder
+- Google Play
+- Ikea
+- Airbnb
+- Bitnovo
+- Discord
+- Zalando
+- Uber Eats
+- Binance
+- Uber
+- Apie ENEBA
+- Susisiek su mumis
+- Darbo pasiūlymai
+- Eneba Pasitikėjimas ir Skaidrumas
+- Engineering
+- Kaip pirkti
+- Kolekcijos
+- Lojalumo programa
+- Nuolaidos
+- D.U.K.
+- Kaip aktyvuoti žaidimą
+- Pildyti užklausą
+- Grąžinimo politika
+- Turinio ataskaitos
+- Žaidimų naujienos
+- Konkursai
+- Tapk partneriu
+- Snakzy: Žaisk ir uždirbk
+- Parduok per Eneba
+- Reklamuok pas mus
+- Facebook
+- X
+- Instagram
+- Reddit
+- Trustpilot
+- Privatumo pranešime
+- Taisyklės ir sąlygos
+- Privatumo pranešimas
+- Visi pasiūlymai
+- PUBG UC
+- Genshin Impact
+- Marvel Rivals
+- Wuthering Waves
+- Zenless Zone Zero
+- Honkai Star Rail
+- Mobile Legends
+- Free Fire
+- Poppo
+- Delta Force
+- Blood Strike
+- Pigūs Steam žaidimai
+- Dabar populiaru Naujas
+- Steam žaidimai
+- PSN žaidimai
+- Xbox žaidimai
+- Nintendo Switch žaidimai
+- Epic Games
+- Origin žaidimai
+- Ubisoft Connect žaidimai
+- GOG žaidimai
+- Battle.net žaidimai
+- DLC
+- Vieno žaidėjo režimas
+- Kelių žaidėjų režimas
+- Veiksmo
+- Pirmojo asmens
+- Trečiojo asmens
+- Simuliaciniai
+- Sportas
+- Co-Op
+- FPS / TPS
+- Nuotykių
+- Strateginiai
+- Lenktynių
+- Indie
+- RPG
+- Vaizdas iš viršaus
+- Siaubo
+- Virtuali realybė
+- Platforma
+- Hack & Slash
+- Koviniai
+- Galvosūkių
+- MMO
+- Point & Click
+- Arkadiniai
+- Fortnite rinkiniai
+- Fortnite skin'ai
+- CoD odos
+- Roblox Skins
+- CS2 (CSGO) Skins
+- Žaidimai iki €1
+- Žaidimai iki €2
+- Žaidimai iki €5
+- Žaidimai iki €10
+- Žaidimai iki €25
+- Žaidimai iki €50
+- Žaidimai nuo €50 ir daugiau
+- PaysafeCard Player Pass
+- Fortnite V-Bucks
+- Roblox Robux
+- League of Legends
+- Google Play papildymai
+- Razer Gold papildymai
+- Twitch papildymai
+- Blizzard papildymai
+- Žaidimo laiko papildymai
+- EA Play
+- PSN papildymai
+- Xbox Live papildymai
+- Nintendo eShop papildymai
+- Papildymai iki €10
+- Papildymai iki €25
+- Papildymai iki €50
+- Papildymai nuo €50
+- Žaid. taškai
+- Origin žaidimų taškai
+- Battle.net žaidimų taškai
+- FIFA FUT Points
+- FC Points
+- GTA Online Cash
+- Riot Points
+- Garena Free Fire Diamonds
+- Mobile Legends Diamonds
+- Apex Coins
+- NBA VC
+- Guild Wars 2 Gems
+- CoD taškai
+- Rainbow 6 Credits
+- iTunes papildymai
+- Spotify papildymai
+- Amazon papildymai
+- Wolt
+- Netflix papildymai
+- Meta Quest
+- YouTube
+- Voicemod
+- Pramogos
+- Muzika
+- Streaminimas
+- Kelionės
+- Viešbučiai
+- Transportas
+- Maistas
+- Maistas / Restoranai
+- Parduotuvės
+- VPN
+
+## Form fields
+- input | search | text | Ieškoti žaidimų, papildymų ir daugiau | Paieška
+- input | email | email | Įvesk el. pašto adresą | Įvesk el. pašto adresą
+
+## Image alt texts
+- Js disabled
+- Eneba logo
+- lithuania
+- enebian_7508895478685289
+- Psn Giftcard
+- Steam Giftcard
+- Xbox Giftcard
+- Grand Theft Auto VI (PS5) PSN Key EUROPE
+- PSN
+- Grand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Xbox Live
+- Grand Theft Auto VI (PS5) PSN Key UNITED KINGDOM
+- Grand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPE
+- Grand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBAL
+- Minecraft: Java & Bedrock Edition (PC) Official website Key GLOBAL
+- Windows Store
+- Minecraft: Java & Bedrock Edition (PC) Windows Store Key GLOBAL
+- Steam
+- Rockstar Games Launcher
+- Monster Energy
+- Google play badge
+- Apple badge
+
+## Repeating / structural class names
+- (none)
+
+## Approximate visible text
+```text
+If you’re seeing this message, that means JavaScript has been disabled on your browser. Please enable JS to make this app work.LietuviųEURPatogiausiam naršymui naudokis Eneba programėle !KategorijosPigūs žaidimaiProgr. įrangaE. kortelėsEneba papildymaiKonkursasTGA ’26GTA 6Main GTA VI | A variantMain GTA VI | A variantMEGA GIVEAWAY | NOV 26MEGA GIVEAWAY | NOV 26CHEAP GAMES | NOV 26CHEAP GAMES | NOV 26SOFTWARE | APR 2026SOFTWARE | APR 2026ŽaidimaiŽaid. KortelėseDovanų kortelėsE-money kortelėsSteamSteam papildymaiPSNXboxFIFAFortniteAmazonAppleMobilieji žaidimaiSpotifyNetflixNintendoPapildiniaiIšankstiniai užsakymaiPigūs žaidimaiPopuliarūs papildymaiRekomenduojama tau grįžtaPSNgrįžtaPSNGrand Theft Auto VI (PS5) PSN Key EUROPEEuropaNuo 75,38 €grįžta: 8,29 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPEEuropaNuo 84,46 €grįžta: 9,29 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaPSNgrįžtaPSNGrand Theft Auto VI (PS5) PSN Key UNITED KINGDOMJungtinė KaralystėNuo 76,47 €grįžta: 8,41 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPEEuropaNuo 77,88 €grįžta: 8,57 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBALVisas pasaulisNuo 72,80 €grįžta: 8,01 €Pridėti į krepšelįPeržiūrėti pasiūlymusPeržiūrėti viskąPopuliariausi žaidimai grįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI: Ultimate Edition (Xbox Series X|S) XBOX LIVE Key EUROPEEuropaNuo 84,46 €grįžta: 9,29 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaWindows StoregrįžtaWindows StoreMinecraft: Java & Bedrock Edition (PC) Official website Key GLOBALVisas pasaulisNuo 29,99 €-49%15,25 €grįžta: 1,68 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaPSNgrįžtaPSNGrand Theft Auto VI (PS5) PSN Key EUROPEEuropaNuo 75,38 €grįžta: 8,29 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI (Xbox Series X|S) XBOX LIVE Key GLOBALVisas pasaulisNuo 72,80 €grįžta: 8,01 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaPSNgrįžtaPSNGrand Theft Auto VI (PS5) PSN Key UNITED KINGDOMJungtinė KaralystėNuo 76,47 €grįžta: 8,41 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaWindows StoregrįžtaWindows StoreMinecraft: Java & Bedrock Edition (PC) Windows Store Key GLOBALVisas pasaulisNuo 15,29 €grįžta: 1,68 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamover the hill Steam Key (PC) EUROPEEuropaNuo 24,99 €-52%11,93 €grįžta: 1,31 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaPSNgrįžtaPSNGrand Theft Auto VI + Pre-Order Bonus (DLC) (PS5) PSN Key EUROPEEuropaNuo 76,92 €grįžta: 8,46 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaPSNgrįžtaPSNGrand Theft Auto VI (PS5) PSN Key UNITED STATESJAVNuo 89,99 €grįžta: 9,90 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamWARDOGS Steam Key (PC) GLOBALVisas pasaulisNuo 29,15 €grįžta: 3,21 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamFarming Simulator 25 (PC) Steam Key GLOBALLikęs pasaulisNuo 29,99 €-54%13,93 €grįžta: 1,53 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto VI + Pre-Order Bonus (Xbox Series X|S) XBOX LIVE Key EUROPEEuropaNuo 77,88 €grįžta: 8,57 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamPEAK Steam Key (PC) GLOBALVisas pasaulisNuo 7,49 €-63%2,78 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRockstar Games LaunchergrįžtaRockstar Games LauncherGrand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBALVisas pasaulisNuo 9,12 €grįžta: 1,00 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamAssetto Corsa Steam key GLOBALVisas pasaulisNuo 19,99 €-78%4,49 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąPopuliariausios el. dovanų kortelės Rodyti viskąPopuliariausi papildymai Rodyti viskąĮsigyk iš anksto Rodyti viskąKategorijosĮkelti daugiauApie EnebaApie ENEBASusisiek su mumisDarbo pasiūlymaiEneba Pasitikėjimas ir SkaidrumasEngineeringPirkimasKaip pirktiKolekcijosLojalumo programaNuolaidosPagalbaD.U.K.Kaip aktyvuoti žaidimąPildyti užklausąGrąžinimo politikaTurinio ataskaitosBendruomenėŽaidimų naujienosKonkursaiTapk partneriuSnakzy: Žaisk ir uždirbkVersluiParduok per EnebaReklamuok pas musSek musAtsisiųsti Eneba programėlęAtsiliepimaiGauk asmeninius žaidimų pasiūlymusPrenumeruotiAtšaukti prenumeratą gali bet kada. Daugiau informacijos rasi Privatumo pranešime.LietuviųEURAutorinės teisės © 2026 Eneba. Visos teisės saugomos. UAB „Helis play“, Gynėjų g. 4-333, Vilnius, Lietuvos Respublika Taisyklės ir sąlygos, Privatumo pranešimas, Slapukų nustatymai.{"app.components.AddToWishList.addButton":"Pridėti į norų sąrašą","app.components.AddToWishList.description":"Ar nori gauti el. pašto pranešimą, kai sumažės norų sąraše esančios prekės kaina?","app.components.AddToWishList.modalTitle":"Norų sąrašo nustatymai","app.components.AddToWishList.no":"Ne, aš nenoriu gauti pranešimų el. paštu.","app.components.AddToWishList.privacy":"Atšaukti prenumeratą gali bet kada. Daugiau informacijos rasi \u003clink>Privatumo pranešime\u003c/link>.","app.components.AddToWishList.removeButton":"Pašalinti iš norų sąrašo","app.components.AddToWishList.save":"Išsaugoti","app.components.AddToWishList.settingsUpdated":"Norų sąrašo nustatymai pakeisti","app.components.AddToWishList.yes":"Taip, noriu pranešimų el. paštu.","app.components.Button.close":"Uždaryti","app.components.CartItem.cancel":"Atšaukti","app.components.CartItem.cantBe":"{country} yra netinkamas regionas aktyvavimui","app.components.CartItem.coinsReward":"Monetos: {amount}","app.components.CartItem.deliveryInformation":"Pristatymo informacija","app.components.CartItem.digitalProduct":"Skaitmeninė prekė","app.components.CartItem.digitalProductTooltip":"Perki skaitmeninę produkto versiją. Gausi produkto kodą, kurį galima aktyvuoti atitinkamoje platformoje.","app.components.CartItem.directTopUp":"Tiesioginiai papildymai","app.components.CartItem.findForYourCountry":"Atrask tinkantį tavo šaliai","app.components.CartItem.free":"Nemokama","app.components.CartItem.importantNotice":"Svarbus pranešimas.","app.components.CartItem.increaseQuantity":"Padidinti kiekį","app.components.CartItem.limitedOffer":"Ribotas pasiūlymas.","app.components.CartItem.nonMixableMerchant":"Dėl šio pardavėjo nustatytų \u003cterms> terminų ir sąlygų \u003c/terms> šio produkto negalima pirkti kartu su kitų pardavėjų pasiūlymais.","app.components.CartItem.onlyOneItem":"Gali nusipirkti tik 1 šio pasiūlymo prekę.","app.components.CartItem.prioritySupport":"Pirmenybinė pagalba","app.components.CartItem.prioritySupportExplanation":"Šis pasiūlymas apima pirmenybinę pagalbą: jei kada nors prireiks pagalbos, tavo užklausa bus perkeliama tiesiai į eilės pradžią.","app.components.CartItem.quantity":"Kiekis","app.components.CartItem.reduceQuantity":"Sumažinti kiekį","app.components.CartItem.remove":"Pašalinti","app.components.CartItem.removeGift":"Pašalinti slaptą dovaną?","app.components.CartItem.removeItemFromCart":"Pašalinti prekę iš krepšelio","app.components.CartItem.soldBy":"Parduoda","app.components.CartItem.soldOut":"Šis pasiūlymas nebegalioja","app.components.CartItem.tooManyProducts":"Šios prekės kiekis per didelis","app.components.CartItem.topUpsTooltip":"Produktas bus išsiųstas į nurodytą paskyrą.","app.components.CartItem.youAboutGiftRemove":"Ketini pašalinti savo dovaną. Pašalinęs šią dovaną, jos nebegalėsi pridėti atgal į krepšelį. Atkreipk dėmesį, kad ši dovana yra nemokama.","app.components.CashbackLabel.cashback":"grįžta","app.components.CashbackLabel.learnMore":"Sužinoti daugiau","app.components.CashbackLabel.promotionsEnd":"Akcija baigiasi {timeLeft}!","app.components.CashbackLabel.theAmountYou":"Po pirkimo į piniginę grąžinama suma.","app.components.CashbackRestrictionNotice.cashbackLimitNotice":"Pinigų grąžinimas vienai ar daugiau prekių, esančių tavo krepšelyje, nebus taikomas, nes viršys prekių, turinčių pinigų grąžinimo galimybę, dienos limitą {dayLimit}.","app.components.CashbackRestrictionNotice.cashbackUsageDisclaimer":"Pinigų grąžinimo naudojimo pranešimas","app.components.CashbackRestrictionNotice.learnAboutCashback":"Sužinok daugiau apie pinigų grąžinimo limitus \u003clink> čia \u003c/link>","app.components.CashbackRestrictionNotice.limitedByDiscountCode":"\u003chighlight>Svarbu\u003c/highlight>: Pinigai nebus grąžinami, jei naudojamas nuolaidos kodas, nes vienam produktui galima taikyti tik vieną akciją.","app.components.CashbackRestrictionNotice.limitedByWalletNotice":"\u003chighlight>Svarbu!\u003c/highlight> Pinigų grąžinimas nesuteikiamas, kai Eneba piniginė naudojama kaip mokėjimo būdas.","app.components.CashbackRestrictionNotice.maximumAllowedSpending":"Maksimali leistina išlaidų suma yra {maxAmount}","app.components.CashbackRestrictionNotice.minimumAllowedSpending":"Minimali leistina išlaidų suma yra {minAmount}","app.components.CashbackRestrictionNotice.pleaseNote":"Atkreipk dėmesį, kad kai kurie arba visi piniginėje esantys pinigai gali būti nepritaikyti atsiskaitymo metu","app.components.CashbackRestrictionNotice.youCanPayUpTo":"Gali naudoti iki \u003cstrong>{percentage} %\u003c/strong> nuo visos užsakymo sumos pinigų grąžinimo","app.components.Cookies.acceptAll":"Priimti visus","app.components.Cookies.allowAll":"Leisti visus","app.components.Cookies.alwaysActive":"Visada aktyvuota","app.components.Cookies.category":"Kategorija","app.components.Cookies.confirmChoice":"Patvirtinti","app.components.Cookies.cookieDescSea":"Naudojame slapukus, kad pagerintume tavo patirtį. Toliau lankydamasis šioje svetainėje sutinki su mūsų slapukų naudojimu.","app.components.Cookies.cookieDetails":"Detaliau","app.components.Cookies.cookiePreferences":"Slapukų nustatymai","app.components.Cookies.cookies":"Slapukai","app.components.Cookies.cookiesDesc":"Eneba ir jos partneriai naudoja slapukus ir panašias technologijas informacijai apie šios svetainės naudotojus rinkti ir analizuoti. Šią informaciją naudojame, kad pagerintume svetainės turinį, reklamą ir kitas paslaugas. Tavo asmeniniai duomenys taip pat gali būti naudojami skelbimams personalizuoti.{newLine}Spustelėjus \"Sutinku su viskuo\", tu sutinki, kad Eneba ir jos partneriai naudotų šias technologijas. Savo sutikimą gali koreguoti spustelėjus \"Pritaikyti\".{newLine}Daugiau informacijos apie tai, kaip Google naudoja tavo duomenis, rasi \u003clink>Google verslo sauga ir privatumas\u003c/link>.","app.components.Cookies.cookiesList":"Slapukų sąrašas","app.components.Cookies.customize":"Koreguoti","app.components.Cookies.description":"Aprašymas","app.components.Cookies.duration":"Trukmė","app.components.Cookies.host":"Valdytojas","app.components.Cookies.manageCookies":"Tvarkyti slapukų nustatymus","app.components.Cookies.name":"Pavadinimas","app.components.Cookies.privacyPolicy":"Privatumo pranešimas","app.components.CopyToClipboard.copied":"Nukopijuota!","app.components.CopyToClipboard.copyLink":"Kopijuoti nuorodą","app.components.CountryAvailability.canBeActivatedInCountry":"{countryName} yra tinkamas regionas šio produkto versijai aktyvuoti","app.components.CountryAvailability.cantActivatedDesc":"Kodėl tai matai? Radai produkto versiją, kuri negali būti aktyvuojama tavo šalyje. Ieškok šio produkto kitame leistiname regione.","app.components.CountryAvailability.cantBeActivatedInCountry":"Ši produkto versija negali būti aktyvuota {countryName}","app.components.CountryAvailability.checkRestrictionLink":"Patikrink \u003ca>regiono apribojimus\u003c/a>","app.components.CountryAvailability.countryNotFound":"Atsiprašome, tokia šalis nerasta","app.components.CountryAvailability.listCountries":"Leidžiamų šios produkto versijos šalių sąrašas:","app.components.CountryAvailability.productRegion":"Produktas ribojamas šiame regione:","app.components.CountryAvailability.searchCountry":"Ieškoti šalies","app.components.CountryAvailability.y
+```

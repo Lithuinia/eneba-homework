@@ -1,0 +1,267 @@
+# Example page analysis: cheap_games_examples_page.html
+
+Source: `examples/cheap_games_examples_page.html`
+
+## Metadata
+- Title: Pigūs Žaidimai - Pigūs Steam Žaidimai PC
+- Meta description: Pigūs žaidimai - pigūs Steam žaidimų raktai. Pirk PC žaidimus iki 10€ ir atrask dar pigesnius žaidimus iki 5€. Rinkis indie, AAA, remasters ir dar daugiau.
+- Body text length: 228669
+
+## Headings
+- H1: Žaidimai iki 90% pigiau!*
+- H2: Žaidimai, kurios perka visi
+- H2: Žaidimai iki 10€
+- H2: Xbox Žaidimai iki 10€
+- H2: Žaidimų Taškai iki 10€
+- H2: Nintendo Žaidimai iki 10€
+
+## Visible buttons
+- Išvalyti paieškos tekstą
+- Uždaryti
+- LietuviųEUR
+- Mano pirkinių krepšelis
+- Prisijungti
+- Meniu
+- Pridėti į krepšelį - Suicide Squad: Kill the Justice League (PC) Steam Key GLOBAL
+- Pridėti į krepšelį
+- Pridėti į norų sąrašą - Suicide Squad: Kill the Justice League (PC) Steam Key GLOBAL
+- Pridėti į krepšelį - Bread & Fred (PC) Steam Key EUROPE
+- Pridėti į norų sąrašą - Bread & Fred (PC) Steam Key EUROPE
+- Pridėti į krepšelį - Assetto Corsa Steam key GLOBAL
+- Pridėti į norų sąrašą - Assetto Corsa Steam key GLOBAL
+- Pridėti į krepšelį - Middle-earth: Shadow of War (Definitive Edition) Steam Key GLOBAL
+- Pridėti į norų sąrašą - Middle-earth: Shadow of War (Definitive Edition) Steam Key GLOBAL
+- Pridėti į krepšelį - Terraria Steam Gift GLOBAL
+- Pridėti į norų sąrašą - Terraria Steam Gift GLOBAL
+- Pridėti į krepšelį - Tabletop Simulator Steam Gift GLOBAL
+- Pridėti į norų sąrašą - Tabletop Simulator Steam Gift GLOBAL
+- Pridėti į krepšelį - Metal Slug Tactics (PC) Steam Key GLOBAL
+- Pridėti į norų sąrašą - Metal Slug Tactics (PC) Steam Key GLOBAL
+- Pridėti į krepšelį - Dying Light Essentials Edition Steam (PC) Key GLOBAL
+- Pridėti į norų sąrašą - Dying Light Essentials Edition Steam (PC) Key GLOBAL
+- Pridėti į krepšelį - Mortal Kombat XL Steam Key GLOBAL
+- Pridėti į norų sąrašą - Mortal Kombat XL Steam Key GLOBAL
+- Pridėti į krepšelį - PEAK Steam Key (PC) GLOBAL
+- Pridėti į norų sąrašą - PEAK Steam Key (PC) GLOBAL
+- Pridėti į krepšelį - Grand Theft Auto V: Premium Online Edition Rockstar Games Launcher Key GLOBAL
+- Pridėti į norų sąrašą - Grand Theft Auto V: Premium Online Edition Rockstar Games Launcher Key GLOBAL
+- Pridėti į krepšelį - Project Zomboid Steam Gift GLOBAL
+- Pridėti į norų sąrašą - Project Zomboid Steam Gift GLOBAL
+- Pridėti į krepšelį - Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Pridėti į norų sąrašą - Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Pridėti į krepšelį - Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+- Pridėti į norų sąrašą - Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+- Pridėti į krepšelį - Human: Fall Flat Steam Key GLOBAL
+- Pridėti į norų sąrašą - Human: Fall Flat Steam Key GLOBAL
+- Pridėti į krepšelį - Batman: Arkham Collection Steam Key GLOBAL
+- Pridėti į norų sąrašą - Batman: Arkham Collection Steam Key GLOBAL
+- Pridėti į krepšelį - Minecraft (Xbox One/Xbox Series X|S) Xbox Live Key GLOBAL
+- Pridėti į norų sąrašą - Minecraft (Xbox One/Xbox Series X|S) Xbox Live Key GLOBAL
+- Pridėti į krepšelį - Dark Souls: Remastered XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Dark Souls: Remastered XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Minecraft Legends XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Minecraft Legends XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Sekiro: Shadows Die Twice - GOTY Edition XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Sekiro: Shadows Die Twice - GOTY Edition XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Call of Duty: Modern Warfare 2 Campaign Remastered XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Call of Duty: Modern Warfare 2 Campaign Remastered XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Fallout 76 (Xbox One) Xbox Live Key GLOBAL
+- Pridėti į norų sąrašą - Fallout 76 (Xbox One) Xbox Live Key GLOBAL
+- Pridėti į krepšelį - Assassin's Creed: Unity (Xbox One) Xbox Live Key GLOBAL
+- Pridėti į norų sąrašą - Assassin's Creed: Unity (Xbox One) Xbox Live Key GLOBAL
+- Pridėti į krepšelį - Wolfenstein II: The New Colossus Digital Deluxe Edition XBOX LIVE Key GLOBAL
+- Pridėti į norų sąrašą - Wolfenstein II: The New Colossus Digital Deluxe Edition XBOX LIVE Key GLOBAL
+- Pridėti į krepšelį - Call of Duty: Black Ops III - Zombies Chronicles Edition XBOX LIVE Key EUROPE
+- Pridėti į norų sąrašą - Call of Duty: Black Ops III - Zombies Chronicles Edition XBOX LIVE Key EUROPE
+- Pridėti į krepšelį - Grand Theft Auto Online (Xbox Series S|X) Xbox Live Key EUROPE
+- Pridėti į norų sąrašą - Grand Theft Auto Online (Xbox Series S|X) Xbox Live Key EUROPE
+- Pridėti į krepšelį - Roblox - 200 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 200 Robux Key GLOBAL
+- Pridėti į krepšelį - Roblox - 100 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 100 Robux Key GLOBAL
+- Pridėti į krepšelį - Roblox - 1000 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 1000 Robux Key GLOBAL
+- Pridėti į krepšelį - Roblox - 800 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 800 Robux Key GLOBAL
+- Pridėti į krepšelį - Roblox - 400 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 400 Robux Key GLOBAL
+- Pridėti į krepšelį - PUBG Mobile 600 + 60 UC (Unknown Cash) Key GLOBAL
+- Pridėti į norų sąrašą - PUBG Mobile 600 + 60 UC (Unknown Cash) Key GLOBAL
+- Pridėti į krepšelį - Valorant Points 475 VP Key - GLOBAL
+- Pridėti į norų sąrašą - Valorant Points 475 VP Key - GLOBAL
+- Pridėti į krepšelį - Valorant Points 75 VP Key - GLOBAL
+- Pridėti į norų sąrašą - Valorant Points 75 VP Key - GLOBAL
+- Pridėti į krepšelį - Roblox - 500 Robux Key GLOBAL
+- Pridėti į norų sąrašą - Roblox - 500 Robux Key GLOBAL
+- Pridėti į krepšelį - PUBG Mobile 300 + 25 UC (Unknown Cash) Key GLOBAL
+- Pridėti į norų sąrašą - PUBG Mobile 300 + 25 UC (Unknown Cash) Key GLOBAL
+- Pridėti į krepšelį - Assassin's Creed: The Rebel Collection (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Assassin's Creed: The Rebel Collection (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Just Dance 2022 (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Just Dance 2022 (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Assassin's Creed III: Remastered (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Assassin's Creed III: Remastered (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Crysis Remastered Trilogy (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Crysis Remastered Trilogy (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Monopoly (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Monopoly (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Just Dance 2021 (Nintendo Switch) Nintendo Key EUROPE
+- Pridėti į norų sąrašą - Just Dance 2021 (Nintendo Switch) Nintendo Key EUROPE
+- Pridėti į krepšelį - Instant Sports (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Instant Sports (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Overcooked! 2 (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Overcooked! 2 (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - Borderlands Legendary Collection (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - Borderlands Legendary Collection (Nintendo Switch) eShop Key EUROPE
+- Pridėti į krepšelį - 30-in-1 Game Collection Volume 1 (Nintendo Switch) eShop Key EUROPE
+- Pridėti į norų sąrašą - 30-in-1 Game Collection Volume 1 (Nintendo Switch) eShop Key EUROPE
+- Prenumeruoti
+- Slapukų nustatymai
+- Progr. įranga
+
+## Visible links / navigation labels
+- Eneba
+- Norų sąrašas
+- Prisijungti
+- Registruotis
+- Kategorijos
+- Pigūs žaidimai
+- Progr. įranga
+- E. kortelės
+- Eneba papildymai
+- Konkursas
+- TGA ’26
+- GTA 6
+- Sutaupyk
+- Suicide Squad: Kill the Justice League (PC) Steam Key GLOBAL
+- Peržiūrėti pasiūlymus
+- Bread & Fred (PC) Steam Key EUROPE
+- Assetto Corsa Steam key GLOBAL
+- Middle-earth: Shadow of War (Definitive Edition) Steam Key GLOBAL
+- Terraria Steam Gift GLOBAL
+- Tabletop Simulator Steam Gift GLOBAL
+- Metal Slug Tactics (PC) Steam Key GLOBAL
+- Dying Light Essentials Edition Steam (PC) Key GLOBAL
+- Mortal Kombat XL Steam Key GLOBAL
+- PEAK Steam Key (PC) GLOBAL
+- Rodyti viską
+- Grand Theft Auto V: Premium Online Edition Rockstar Games Launcher Key GLOBAL
+- Project Zomboid Steam Gift GLOBAL
+- Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+- Human: Fall Flat Steam Key GLOBAL
+- Batman: Arkham Collection Steam Key GLOBAL
+- Minecraft (Xbox One/Xbox Series X|S) Xbox Live Key GLOBAL
+- Dark Souls: Remastered XBOX LIVE Key GLOBAL
+- Minecraft Legends XBOX LIVE Key GLOBAL
+- Sekiro: Shadows Die Twice - GOTY Edition XBOX LIVE Key GLOBAL
+- Call of Duty: Modern Warfare 2 Campaign Remastered XBOX LIVE Key GLOBAL
+- Fallout 76 (Xbox One) Xbox Live Key GLOBAL
+- Assassin's Creed: Unity (Xbox One) Xbox Live Key GLOBAL
+- Wolfenstein II: The New Colossus Digital Deluxe Edition XBOX LIVE Key GLOBAL
+- Call of Duty: Black Ops III - Zombies Chronicles Edition XBOX LIVE Key EUROPE
+- Grand Theft Auto Online (Xbox Series S|X) Xbox Live Key EUROPE
+- Roblox - 200 Robux Key GLOBAL
+- Roblox - 100 Robux Key GLOBAL
+- Roblox - 1000 Robux Key GLOBAL
+- Roblox - 800 Robux Key GLOBAL
+- Roblox - 400 Robux Key GLOBAL
+- PUBG Mobile 600 + 60 UC (Unknown Cash) Key GLOBAL
+- Valorant Points 475 VP Key - GLOBAL
+- Valorant Points 75 VP Key - GLOBAL
+- Roblox - 500 Robux Key GLOBAL
+- PUBG Mobile 300 + 25 UC (Unknown Cash) Key GLOBAL
+- Assassin's Creed: The Rebel Collection (Nintendo Switch) eShop Key EUROPE
+- Just Dance 2022 (Nintendo Switch) eShop Key EUROPE
+- Assassin's Creed III: Remastered (Nintendo Switch) eShop Key EUROPE
+- Crysis Remastered Trilogy (Nintendo Switch) eShop Key EUROPE
+- Monopoly (Nintendo Switch) eShop Key EUROPE
+- Just Dance 2021 (Nintendo Switch) Nintendo Key EUROPE
+- Instant Sports (Nintendo Switch) eShop Key EUROPE
+- Overcooked! 2 (Nintendo Switch) eShop Key EUROPE
+- Borderlands Legendary Collection (Nintendo Switch) eShop Key EUROPE
+- 30-in-1 Game Collection Volume 1 (Nintendo Switch) eShop Key EUROPE
+- Apie ENEBA
+- Susisiek su mumis
+- Darbo pasiūlymai
+- Eneba Pasitikėjimas ir Skaidrumas
+- Engineering
+- Kaip pirkti
+- Kolekcijos
+- Lojalumo programa
+- Nuolaidos
+- D.U.K.
+- Kaip aktyvuoti žaidimą
+- Pildyti užklausą
+- Grąžinimo politika
+- Turinio ataskaitos
+- Žaidimų naujienos
+- Konkursai
+- Tapk partneriu
+- Snakzy: Žaisk ir uždirbk
+- Parduok per Eneba
+- Reklamuok pas mus
+- Facebook
+- X
+- Instagram
+- Discord
+- Reddit
+- Privatumo pranešime
+- Taisyklės ir sąlygos
+- Privatumo pranešimas
+- Visi pasiūlymai
+- Mobilieji žaidimai
+- Žaidimai
+- Žaid. kortelės
+- E-money kortelės
+- PSN
+- Xbox
+- Nintendo
+- Tel. papildymai
+- eSIM
+- Dovanų idėjos
+
+## Form fields
+- input | search | text | Ieškoti žaidimų, papildymų ir daugiau | Paieška
+- input | email | email | Įvesk el. pašto adresą | Įvesk el. pašto adresą
+
+## Image alt texts
+- Js disabled
+- Eneba logo
+- lithuania
+- cheap games
+- Suicide Squad: Kill the Justice League (PC) Steam Key GLOBAL
+- Steam
+- Bread & Fred (PC) Steam Key EUROPE
+- Assetto Corsa Steam key GLOBAL
+- Middle-earth: Shadow of War (Definitive Edition) Steam Key GLOBAL
+- Terraria Steam Gift GLOBAL
+- Steam Gift
+- Tabletop Simulator Steam Gift GLOBAL
+- Metal Slug Tactics (PC) Steam Key GLOBAL
+- Dying Light Essentials Edition Steam (PC) Key GLOBAL
+- Mortal Kombat XL Steam Key GLOBAL
+- PEAK Steam Key (PC) GLOBAL
+- Grand Theft Auto V: Premium Online Edition Rockstar Games Launcher Key GLOBAL
+- Rockstar Games Launcher
+- Project Zomboid Steam Gift GLOBAL
+- Grand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBAL
+- Grand Theft Auto V Rockstar Games Launcher Key GLOBAL
+- Human: Fall Flat Steam Key GLOBAL
+- Batman: Arkham Collection Steam Key GLOBAL
+- Xbox Live
+- Roblox
+- Midasbuy
+- Riot Games
+- Nintendo
+- Monster Energy
+- Google play badge
+- Apple badge
+
+## Repeating / structural class names
+- (none)
+
+## Approximate visible text
+```text
+If you’re seeing this message, that means JavaScript has been disabled on your browser. Please enable JS to make this app work.LietuviųEURPrisijungtiRegistruotisPrisijungti | RegistruotisKategorijosPigūs žaidimaiProgr. įrangaE. kortelėsEneba papildymaiKonkursasTGA ’26GTA 6Žaidimai iki 90% pigiau!*Metro, Assetto Corsa, Frostpunk 2, Alien: Isolation - pirk absoliučius hitus net iki 90% pigiau! Sutaupyk *Lyginant su RMKŽaidimai, kurios perka visigrįžtaSteamgrįžtaSteamSuicide Squad: Kill the Justice League (PC) Steam Key GLOBALVisas pasaulisNuo 69,99 €-97%2,06 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamBread & Fred (PC) Steam Key EUROPEEuropaNuo 14,79 €-86%2,02 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamAssetto Corsa Steam key GLOBALVisas pasaulisNuo 19,99 €-78%4,48 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamMiddle-earth: Shadow of War (Definitive Edition) Steam Key GLOBALVisas pasaulisNuo 39,99 €-94%2,58 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteam GiftgrįžtaSteam GiftTerraria Steam Gift GLOBALVisas pasaulisNuo 9,75 €-79%2,01 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteam GiftgrįžtaSteam GiftTabletop Simulator Steam Gift GLOBALVisas pasaulisNuo 2,79 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamMetal Slug Tactics (PC) Steam Key GLOBALVisas pasaulisNuo 24,99 €-95%1,33 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamDying Light Essentials Edition Steam (PC) Key GLOBALVisas pasaulisNuo 1,98 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamMortal Kombat XL Steam Key GLOBALVisas pasaulisNuo 19,99 €-90%2,07 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamPEAK Steam Key (PC) GLOBALVisas pasaulisNuo 7,49 €-63%2,78 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąŽaidimai iki 10€grįžtaRockstar Games LaunchergrįžtaRockstar Games LauncherGrand Theft Auto V: Premium Online Edition Rockstar Games Launcher Key GLOBALVisas pasaulisNuo 29,98 €-70%9,12 €grįžta: 1,00 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteam GiftgrįžtaSteam GiftProject Zomboid Steam Gift GLOBALVisas pasaulisNuo 19,50 €-55%8,71 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRockstar Games LaunchergrįžtaRockstar Games LauncherGrand Theft Auto V Enhanced (PC) Rockstar Games Launcher Key GLOBALVisas pasaulisNuo 9,12 €grįžta: 1,00 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRockstar Games LaunchergrįžtaRockstar Games LauncherGrand Theft Auto V Rockstar Games Launcher Key GLOBALVisas pasaulisNuo 29,99 €-70%9,12 €grįžta: 1,00 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamHuman: Fall Flat Steam Key GLOBALVisas pasaulisNuo 19,99 €-95%0,97 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamBatman: Arkham Collection Steam Key GLOBALVisas pasaulisNuo 59,99 €-94%3,80 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamAssetto Corsa Steam key GLOBALVisas pasaulisNuo 19,99 €-78%4,48 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteam GiftgrįžtaSteam GiftTerraria Steam Gift GLOBALVisas pasaulisNuo 9,75 €-79%2,01 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveMinecraft (Xbox One/Xbox Series X|S) Xbox Live Key GLOBALVisas pasaulisNuo 19,99 €-55%8,90 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaSteamgrįžtaSteamPEAK Steam Key (PC) GLOBALVisas pasaulisNuo 7,49 €-63%2,78 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąXbox Žaidimai iki 10€grįžtaXbox LivegrįžtaXbox LiveMinecraft (Xbox One/Xbox Series X|S) Xbox Live Key GLOBALVisas pasaulisNuo 19,99 €-55%8,90 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveDark Souls: Remastered XBOX LIVE Key GLOBALVisas pasaulisNuo 39,99 €-91%3,73 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveMinecraft Legends XBOX LIVE Key GLOBALVisas pasaulisNuo 39,99 €-97%1,20 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveSekiro: Shadows Die Twice - GOTY Edition XBOX LIVE Key GLOBALVisas pasaulisNuo 69,99 €-86%9,52 €grįžta: 1,05 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveCall of Duty: Modern Warfare 2 Campaign Remastered XBOX LIVE Key GLOBALVisas pasaulisNuo 5,70 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveFallout 76 (Xbox One) Xbox Live Key GLOBALVisas pasaulisNuo 39,99 €-95%2,16 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveAssassin's Creed: Unity (Xbox One) Xbox Live Key GLOBALVisas pasaulisNuo 29,99 €-70%8,90 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveWolfenstein II: The New Colossus Digital Deluxe Edition XBOX LIVE Key GLOBALVisas pasaulisNuo 1,24 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveCall of Duty: Black Ops III - Zombies Chronicles Edition XBOX LIVE Key EUROPEEuropaNuo 69,99 €-86%9,51 €grįžta: 1,05 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaXbox LivegrįžtaXbox LiveGrand Theft Auto Online (Xbox Series S|X) Xbox Live Key EUROPEEuropaNuo 19,99 €-55%8,97 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąŽaidimų Taškai iki 10€grįžtaRobloxgrįžtaRobloxRoblox - 200 Robux Key GLOBALVisas pasaulisNuo 2,56 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRobloxgrįžtaRobloxRoblox - 100 Robux Key GLOBALVisas pasaulis, Europa, Likęs pasaulisNuo 1,53 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRobloxgrįžtaRobloxRoblox - 1000 Robux Key GLOBALVisas pasaulisNuo 10,12 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRobloxgrįžtaRobloxRoblox - 800 Robux Key GLOBALVisas pasaulisNuo 8,25 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRobloxgrįžtaRobloxRoblox - 400 Robux Key GLOBALVisas pasaulisNuo 6,50 €-9%5,90 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaMidasbuygrįžtaMidasbuyPUBG Mobile 600 + 60 UC (Unknown Cash) Key GLOBALVisas pasaulisNuo 10,99 €-22%8,62 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRiot GamesgrįžtaRiot GamesValorant Points 475 VP Key - GLOBALVisas pasaulisNuo 4,80 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRiot GamesgrįžtaRiot GamesValorant Points 75 VP Key - GLOBALVisas pasaulisNuo 2,32 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaRobloxgrįžtaRobloxRoblox - 500 Robux Key GLOBALVisas pasaulisNuo 6,44 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaMidasbuygrįžtaMidasbuyPUBG Mobile 300 + 25 UC (Unknown Cash) Key GLOBALVisas pasaulisNuo 5,99 €-28%4,31 €6% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąNintendo Žaidimai iki 10€grįžtaNintendogrįžtaNintendoAssassin's Creed: The Rebel Collection (Nintendo Switch) eShop Key EUROPEEuropaNuo 49,99 €-83%8,29 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoJust Dance 2022 (Nintendo Switch) eShop Key EUROPEEuropaNuo 59,99 €-87%7,93 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoAssassin's Creed III: Remastered (Nintendo Switch) eShop Key EUROPEEuropaNuo 39,99 €-82%7,19 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoCrysis Remastered Trilogy (Nintendo Switch) eShop Key EUROPEEuropaNuo 49,99 €-80%9,89 €grįžta: 1,09 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoMonopoly (Nintendo Switch) eShop Key EUROPEEuropaNuo 39,99 €-77%9,21 €grįžta: 1,01 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoJust Dance 2021 (Nintendo Switch) Nintendo Key EUROPEEuropaNuo 6,88 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoInstant Sports (Nintendo Switch) eShop Key EUROPEEuropaNuo 4,49 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoOvercooked! 2 (Nintendo Switch) eShop Key EUROPEEuropaNuo 9,69 €grįžta: 1,07 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendoBorderlands Legendary Collection (Nintendo Switch) eShop Key EUROPEEuropaNuo 49,99 €-81%9,62 €grįžta: 1,06 €Pridėti į krepšelįPeržiūrėti pasiūlymusgrįžtaNintendogrįžtaNintendo30-in-1 Game Collection Volume 1 (Nintendo Switch) eShop Key EUROPEEuropaNuo 14,99 €-69%4,66 €11% grįžtaPridėti į krepšelįPeržiūrėti pasiūlymusRodyti viskąApie EnebaApie ENEBASusisiek su mumisDarbo pasiūlymaiEneba Pasitikėjimas ir SkaidrumasEngineeringPirkimasKaip pirktiKolekcijosLojalumo programaNuolaidosPagalbaD.U.K.Kaip aktyvuoti žaidimąPildyti užklausąGrąžinimo politikaTurinio ataskaitosBendruomenėŽaidimų naujienosKonkursaiTapk partneriuSnakzy: Žaisk ir uždirbkVersluiParduok per EnebaReklamuok pas musSek musAtsisiųsti Eneba programėlęAtsiliepimaiGauk asmeninius žaidimų pasiūlymusPrenumeruotiAtšaukti prenumeratą gali bet kada. Daugiau informacijos rasi Privatumo pranešime.LietuviųEURAutorinės teisės © 2026 Eneba. Visos teisės saugomos. UAB „Helis play“, Gynėjų g. 4-333, Vilnius, Lietuvos Respublika Taisyklės ir sąlygos, Privatumo pranešimas, Slapukų nustatymai.{"app.components.AddToWishList.addButton":"Pridėti į norų sąrašą","app.components.AddToWishList.description":"Ar nori gauti el. pašto pranešimą, kai sumažės norų sąraše esančios prekės kaina?","app.components.AddToWishList.modalTitle":"Norų sąrašo nustatymai","app.components.AddToWishList.no":"Ne, aš nenoriu gauti pranešimų el. paštu.","app.components.AddToWishList.privacy":"Atšaukti prenumeratą gali bet kada. Daugiau informacijos rasi \u003clink>Privatumo pranešime\u003c/link>.","app.components.AddToWishList.removeButton":"Pašalinti iš norų sąrašo","app.components.AddToWishList.save":"Išsaugoti","app.components.AddToWishList.settingsUpdated":"Norų sąrašo nustatymai pakeisti","app.components.AddToWishList.yes":"Taip, noriu pranešimų el. paštu.","app.components.Button.close":"Uždaryti","app.components.CartItem.cancel":"Atšaukti","app.components.CartItem.cantBe":"{country} yra netinkamas regionas aktyvavimui","app.components.CartItem.coinsReward":"Monetos: {amount}","app.components.CartItem.deliveryInformation":"Pristatymo informacija","app.components.CartItem.digitalProduct":"Skaitmeninė prekė","app.components.CartItem.digitalProductTooltip":"Perki skaitmeninę produkto versiją. Gausi produkto kodą, kurį galima aktyvuoti atitinkamoje platformoje.","app.components.CartItem.directTopUp":"Tiesioginiai papildymai","app.components.CartItem.findForYourCountry":"Atrask tinkantį tavo šaliai","app.components.CartItem.free":"Nemokama","app.components.CartItem.importantNotice":"Svarbus pranešimas.","app.components.CartItem.increaseQuantity":"Padidinti kiekį","app.components.CartItem.limitedOffer":"Ribotas pasiūlymas.","app.components.CartItem.nonMixableMerchant":"Dėl šio pardavėjo nustatytų \u003cterms> terminų ir sąlygų \u003c/terms> šio produkto negalima pirkti kartu su kitų pardavėjų pasiūlymais.","app.components.CartItem.onlyOneItem":"Gali nusipirkti tik 1 šio pasiūlymo prekę.","app.components.CartItem.prioritySupport":"Pirmenybinė pagalba","app.components.CartItem.prioritySupportExplanation":"Šis pasiūlymas apima pirmenybinę pagalbą: jei kada nors prireiks pagalbos, tavo užklausa bus perkeliama tiesiai į eilės pradžią.","app.components.CartItem.quantity":"Kiekis","app.components.CartItem.reduceQuantity":"Sumažinti kiekį","app.components.CartItem.remove":"Pašalinti","app.components.CartItem.removeGift":"Pašalinti slaptą dovaną?","app.components.CartItem.removeItemFromCart":"Pašalinti prekę iš krepšelio","app.components.CartItem.soldBy":"Parduoda","app.components.CartItem.soldOut":"Šis pasiūlymas nebegalioja","app.components.CartItem.tooManyProducts":"Šios prekės kiekis per didelis","app.components.CartItem.topUpsTooltip":"Produktas bus išsiųstas į nurodytą paskyrą.","app.components.CartItem.youAboutGiftRemove":"Ketini pašalinti savo dovaną. Pašalinęs šią dovaną, jos nebegalėsi pridėti atgal į krepšelį. Atkreipk dėmesį, kad ši dovana yra nemokama.","app.components.CashbackLabel.cashb
+```
